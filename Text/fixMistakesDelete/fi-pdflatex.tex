@@ -25,7 +25,7 @@ oneside,
 \usepackage[resetfonts]{cmap} %% We need to load the T2A font encoding
 \usepackage[T1,T2A]{fontenc}  %% to use the Cyrillic fonts with Russian texts.
 \usepackage[
-  main=slovak, %% By using `czech` or `slovak` as the main locale
+  main = slovak, %% By using `czech` or `slovak` as the main locale
                 %% instead of `english`, you can typeset the thesis
                 %% in either Czech or Slovak, respectively.
   german, russian, czech, slovak %% The additional keys allow
@@ -84,6 +84,8 @@ oneside,
 \usepackage{amsfonts}
 \usepackage{url}
 \usepackage{menukeys}
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
 \begin{document}
 \chapter{Úvod}
 Vo vývojovom procese sú kvalitne napísané testy takmer tak dôležité ako skutočný kód aplikácie. Správne napísané testy umožňujú jednoduché lokalizovanie chyby, nájdenie neuvoľnených zdrojov alebo overenie funkčnosti kódu. Testy neslúžia iba na odhaľovanie chýb ale hrajú dôležitú rolu pri následnom vývoji a~vytváraní nových funkcií a~vlastností. Pri agilnom programovaní[18] testy riadia a~poháňajú samotný vývoj. \paragraph{}
@@ -128,13 +130,15 @@ Aplikácia RemSig bola pôvodne napísaná v~jazyku PHP, ale kvôli väčšej mo
 \chapter{Testy}
 Testy v~informatike sú programy alebo časti programov navrhnuté na overenie funkcionality testovaného produktu. Typy testov sa enormne líšia v~závislosti od veľkosti testovaného kódu, spôsobov testovania a~očakávaných výsledkov. Pri obrovskom množstve typov testov a~spôsobov testovania je úlohou vývojového tímu zvoliť správnu cestu pre maximálne ošetrenie aplikácie, a~zároveň šetrenia tímových prostriedkov ako je napríklad čas[11].  v~tejto kapitole sú rozobrané len niektoré testovacie procesy a~typy testov, ktoré prevažne súvisia s~praktickou časťou.\paragraph{}
 Jedno z~takýchto rozdelení testov je  testovanie, či sa aplikácia správa ako sa očakáva, a~či sa aplikácia nespráva neočakávane. Pri testovaní očakávaného správania sa pozoruje chovanie aplikácie so správnymi parametrami a~ s~nesprávnymi parametrami. Na druhú stranu pri testovaní neočakávaného správania je snaha dosiahnuť neočakávané správanie  testovaného kódu, alebo aplikácie. Testujú sa hraničné hodnoty, a~hodnoty za hranicami. Ako parametre sa udávajú úplne nezmyselné hodnoty, znaky v~nezvyčajnom kódovaní. V~prípade potreby autentizácie môžu byť ako parametre prázdne polia alebo príkazy(DROP DATABASE - vymaže údaje z~databázy). \paragraph{}
-Ako príklad uvediem triviálnu aplikácia na súčet. Pri testovaní predpokladaného správania sa otestuje či 2 + 2 je 4, a~či 5 +2 nie je 4. Pri kontrole nepredpokladaného správania sa testuje či 2 +a, (maximálna hodnota typu Integer) + 2 alebo \begin{otherlanguage}{russian} и \end{otherlanguage}  +5   nespôsobí pád aplikácie ale tiež či aplikácia nevráti hodnoty, ktoré považuje za korektné.\paragraph{}
+Ako príklad uvediem triviálnu aplikácia na súčet. Pri testovaní predpokladaného správania sa otestuje či 2 + 2 je 4, a~či 5 +2 nie je 4. Pri kontrole nepredpokladaného správania sa testuje či 2 +a, (maximálna hodnota typu Integer) + 2 alebo \begin{otherlanguage}{russian} и \end{otherlanguage}  +5   nespôsobí pád aplikácie ale tiež či aplikácia nevráti hodnoty, ktoré považuje za korektné. \paragraph{}
 
 \section{Tradičné testovanie proti Vývojom riadenými testami}
+
 Pri problematike tvorby testov existuje niekoľko protikladných názorov, pričom najväčší rozpor je v~ideálnom čase písania testov. Tu sa stretávajú dve protichodné myšlienky. Tradičné testovanie a~Vývoj riadený testami (z anglického  Test-driven development (TDD))[8]. \paragraph{}
 V tradičnom testovaní sú všetky testy písané až po dokončení kódu. Tento postup prináša výhody v~podobe rýchleho dokončenia tvorby požadovanej aplikácie a~menšej potreby upravovania kódu, z~dôvodu upresnenia alebo pozmenenia zadania. Samotné testy ale potencionálne strácajú na kvalite z~nevyhnutnej  potreby špecializácie testov na konkrétny kód. Ako je aj závislosť na skutočných dátach, čo navádza k~neodhaleným problémom a~neskorším odchýlkam v~nasledujúcich implementáciách.\paragraph{}
 Ako odpoveď na tieto problémy vzniklo čiastočne z~extrémneho programovania TDD. Extrémne programovanie je špecifické neustálou adopciou na meniace sa požiadavky zákazníka. Medzi identifikujúce znaky extrémneho programovania patrí neustále testovanie, programovanie v~pároch(dvaja programátori za jedným počítačom), alebo implementovanie  iba tých nevyhnutných funkcií pre realizovanie kódu. TDD sa zakladá na malých stále sa opakujúcich krokoch, ktoré vedú k~zefektívneniu celého vývoja. \paragraph{}
 Prvý krok je napísať test a~overiť, že test zlyhá. Nasleduje vytvorenie kódu a~spustenie testov. Posledný krok je refaktorovanie. Refaktorovanie je proces~úprav a~zmeny kódu za účelom zlepšenia priehľadnosti a~udržateľnosti kódu pričom sa ale nemení funkcionalita kódu. V~tomto kroku sa venuje efektivite, čitateľnosti a~udržateľnosti kódu. Kód je presunutý na miesto, kde v~projekte logicky patrí a~sú odstránené duplicity kódu. Pri refaktorovaní, testy slúžia na overenie nezmenenej funkcionality. Celý proces~sa opakuje napísaním testov pre ďalšiu časť požadovanej aplikácie.
+
 \section{Jednotkové testy}
 Jednotkové(z anglického unit) testy sú špecializované na najmenšie jednotky projektov a~aplikácii. Zatiaľ čo s~týmto súhlasí väčšina vývojárov a~expertov definícia najmenšej jednotky má oveľa rozsiahlejšie spektrum pochopení.[13][19] Taktiež je veľa nezhôd do akej miery by mali byť jednotkové testy izolované od zvyšných častí kódu a~ostatných zdrojov. Od jednotkových testov sa takisto očakáva výrazne vyššia rýchlosť ako od iných typov testov. Jednotkové testy sú obvykle spúšťané viackrát za deň a~preto je veľká rýchlosť nevyhnutná. Ideálne časové rozhranie jednotkových testov záleží od vývojára. Martin Fowler poukazuje na to, že čo môže stačiť za rýchlosť jednému vývojárovi sa môže zdať neuveriteľne pomalé inému vývojárovi[22].
 \section{Integračné testy}
