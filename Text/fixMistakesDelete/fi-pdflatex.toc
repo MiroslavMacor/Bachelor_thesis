@@ -124,4 +124,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{18}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{20}{appendix.A}
+\contentsline {chapter}{Bibliografia}{19}{chapter*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{22}{appendix.A}

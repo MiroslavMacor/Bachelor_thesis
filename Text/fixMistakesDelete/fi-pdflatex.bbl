@@ -1,0 +1,392 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{RemsigSilvia}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=VS}{%
+         family={VIGAŠOVÁ},
+         familyi={V\bibinitperiod},
+         given={Silvia},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VS1}
+    \strng{fullhash}{VS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://is.muni.cz/th/409781/fi\_b/vigasova\_bp.pdf}>}
+    \field{title}{Client tools for RemSig}
+  \endentry
+
+  \entry{mySqlBible}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SS}{%
+         family={SUEHRING},
+         familyi={S\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS1}
+    \strng{fullhash}{SS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{(PDF) Wiley Publishing, Inc. Dostupné z:
+  <\url{http://www.chettinadtech.ac.in/g_article/Textbook2\%20\%20MySQL\%20Bible.pdf}>}
+    \field{title}{MySQL Bible}
+  \endentry
+
+  \entry{RemsigMuni}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{Dostupné z:
+  <\url{http://www.ics.muni.cz/cs/katalog-sluzeb/podpora-spravy-ict/vydavani-certifikatu/uloziste-RemSig-mu}>}
+    \field{title}{Úložiště RemSig MU}
+  \endentry
+
+  \entry{JavaVsPHP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LF}{%
+         family={LANGE},
+         familyi={L\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LF1}
+    \strng{fullhash}{LF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{https://blog.codecentric.de/en/2008/07/comparison-of-java-and-php-for-web-applications/}>}
+    \field{title}{Comparison of Java and PHP for Web Applications}
+  \endentry
+
+  \entry{certificateAuth}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={ROUSE},
+         familyi={R\bibinitperiod},
+         given={Margaret},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://searchsecurity.techtarget.com/definition/certificate-authority}>}
+    \field{title}{certificate authority (CA)}
+  \endentry
+
+  \entry{junit}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://junit.org/junit4/faq.html##overview_1}>}
+    \field{title}{Frequently asked questions}
+  \endentry
+
+  \entry{dbunit}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://dbunit.sourceforge.net/index.html}>}
+    \field{title}{About}
+  \endentry
+
+  \entry{gitHubAnalysis}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WT}{%
+         family={WEISS},
+         familyi={W\bibinitperiod},
+         given={Tall},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WT1}
+    \strng{fullhash}{WT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://blog.takipi.com/we-analyzed-30000-github-projects-here-are-the-top-100-libraries-in-java-js-and-ruby/}>}
+    \field{title}{We Analyzed 30,000 GitHub Projects – Here Are The Top 100
+  Libraries in Java, JS and Ruby}
+  \endentry
+
+  \entry{softwareTesting}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{https://en.wikipedia.org/wiki/Software\_testing}>}
+    \field{title}{Software testing}
+  \endentry
+
+  \entry{x509cert}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={ROUSE},
+         familyi={R\bibinitperiod},
+         given={Margaret},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://searchsecurity.techtarget.com/definition/X509-certificate}>}
+    \field{title}{X.509 certificate}
+  \endentry
+
+  \entry{crypt768}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KeaT}{%
+         family={KLEINJING},
+         familyi={K\bibinitperiod},
+         suffix={T.},
+         suffixi={T\bibinitperiod},
+         given={et\bibnamedelima al. (2010-02-18)},
+         giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod
+  \bibinitperiod-\bibinitperiod-\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KTea1}
+    \strng{fullhash}{KTea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[PDF] International Association for Cryptologic Research.
+  Dostupné z: <\url{https://eprint.iacr.org/2010/006.pdf}>}
+    \field{title}{actorization of a 768-bit RSA modulus}
+  \endentry
+
+  \entry{ssl}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RE}{%
+         family={RESCORLA},
+         familyi={R\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RE1}
+    \strng{fullhash}{RE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Boston: Addison-Wesley, c2001. ISBN 0201615983. s. 44-100,
+  140-173}
+    \field{title}{SSL and TLS: designing and building secure systems}
+  \endentry
+
+  \entry{sslOnline}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={ROUSE},
+         familyi={R\bibinitperiod},
+         given={Margaret},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://searchsecurity.techtarget.com/definition/Secure-Sockets-Layer-SSL}>}
+    \field{title}{Secure Sockets Layer (SSL)}
+  \endentry
+
+  \entry{codeMaintability}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FMC}{%
+         family={FEATHERS},
+         familyi={F\bibinitperiod},
+         given={Michael\bibnamedelima C},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMC1}
+    \strng{fullhash}{FMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Brno: Computer Press, 2009. ISBN 978-80-251-2127-6. s. 24}
+    \field{title}{Údržba kódu převzatých programů}
+  \endentry
+
+  \entry{testSeparation}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/}>}
+    \field{title}{What are Unit Testing, Integration Testing and Functional
+  Testing?}
+  \endentry
+
+  \entry{servlet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://techterms.com/definition/servlet}>}
+    \field{title}{Servlet Definition}
+  \endentry
+
+  \entry{staticVsDynamic}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://edinteractive.co.uk/static-vs-dynamic-websites-difference/}>}
+    \field{title}{Static Vs Dynamic websites – what’s the difference?}
+  \endentry
+
+  \entry{agileDef}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WK}{%
+         family={WATERS},
+         familyi={W\bibinitperiod},
+         given={Kelly},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WK1}
+    \strng{fullhash}{WK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://www.allaboutagile.com/what-is-agile-10-key-principles/}>}
+    \field{title}{What Is Agile? (10 Key Principles of Agile)}
+  \endentry
+
+  \entry{effectiveSoftwareTesting}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PWE}{%
+         family={PERRY},
+         familyi={P\bibinitperiod},
+         given={William\bibnamedelima E},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PWE1}
+    \strng{fullhash}{PWE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{New York: Wiley, c1995. ISBN 0471060976. 3 - 179}
+    \field{title}{Effective methods for software testing}
+  \endentry
+
+  \entry{systemNanotime}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://www.tutorialspoint.com/java/lang/system_nanotime.htm}>}
+    \field{title}{system_nanotime}
+  \endentry
+
+  \entry{networkSocket}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://whatis.techtarget.com/definition/sockets}>}
+    \field{title}{network socket}
+  \endentry
+
+  \entry{unitTest}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={FOWLER},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://martinfowler.com/bliki/UnitTest.html}>}
+    \field{title}{UnitTest}
+  \endentry
+
+  \entry{perfromanceTest}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MJD}{%
+         family={MEIER},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D},
+      }}%
+    }
+    \strng{namehash}{MJD1}
+    \strng{fullhash}{MJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{United States?: Microsoft, c2007. ISBN 0735625700.}
+    \field{title}{Performance testing guidance for web applications: patterns &
+  practices}
+  \endentry
+
+  \entry{ssl3.0}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Fea}{%
+         family={FREIER},
+         familyi={F\bibinitperiod},
+         given={et\bibnamedelima al},
+         giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Fea1}
+    \strng{fullhash}{Fea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{https://tools.ietf.org/html/rfc6101}>}
+    \field{title}{The Secure Sockets Layer (SSL) Protocol Version 3.0}
+  \endentry
+
+  \entry{digitalSignature}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={ROUSE},
+         familyi={R\bibinitperiod},
+         given={Margret},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM2}
+    \strng{fullhash}{RM2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[online] Dostupné z:
+  <\url{http://searchsecurity.techtarget.com/definition/digital-signature>}}
+    \field{title}{digital signature}
+  \endentry
+
+  \entry{density}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HEIJDEN, F., ZIVKOVIC, Z}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[cit. 13.~5. 2015] Pattern Recognition Letters, 2006, roč.
+  27, č. 7, s. 773--780. Dostupné z:
+  <\url{http://www.zoranz.net/Publications/zivkovicPRL2006.pdf}>}
+    \field{title}{Efficient Adaptive Density Estimation per Image Pixel for the
+  Task of Background Subtraction}
+  \endentry
+\endsortlist
+\endinput

@@ -40,6 +40,8 @@ oneside,
 %% fonts:
 \usepackage{paratype}
 \def\textrussian#1{{\usefont{T2A}{PTSerif-TLF}{m}{rm}#1}}
+
+
 %%
 %% The following section sets up the metadata of the thesis.
 \thesissetup{
@@ -66,14 +68,21 @@ oneside,
 %% The following section sets up the bibliography.
 \usepackage{csquotes}
 \usepackage[              %% When typesetting the bibliography, the
-  backend=biber,          %% `numeric` style will be used for the
+  backend=bibtex,          %% `numeric` style will be used for the
   style=numeric,          %% entries and the `numeric-comp` style
   citestyle=numeric-comp, %% for the references to the entries. The
   sorting=none,           %% entries will be sorted in cite order.
   sortlocale=auto         %% For more unformation about the available
 ]{biblatex}               %% `style`s and `citestyles`, see:
 %% <http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf>.
-\addbibresource{example.bib} %% The bibliograpic database within
+% url breaks in bibliography
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+
+\setlength{\bibhang}{0pt}
+
+
+\addbibresource{bibliography.bib} %% The bibliograpic database within
                           %% the file `example.bib` will be used.
 \usepackage{makeidx}      %% The `makeidx` package contains
 \makeindex                %% helper commands for index typesetting.
@@ -123,7 +132,7 @@ RemSig poskytuje:
 \paragraph{}
 Bezpečnosť dát uložených v~systéme RemSig je dosiahnutá nasledovnými opatreniami. RemSig zabezpečuje súkromné kľúče, užívateľom zvoleným heslom. Pri dešifrovaní súkromného kľúča je operácia dešifrovania vykonávaná striktne v~operačnej pamäti počítača a~dešifrovaný kľúč nikdy nie je uložený na disk. Všetka komunikácia s~aplikáciou RemSig prebieha po úspešnej autentizácii cez SSL a~dáta sú v~šifrovanej podobe pravidelne zálohované. Všetky operácie sú prísne auditované, a~je jednoduché zistiť, kto s~čím manipuloval. Kvalifikované certifikáty sú vydané certifikačnou autoritou PostSignum, s~ktorou má MU podpísanú dohodu.
 \paragraph{}
-Aplikácia RemSig bola pôvodne napísaná v~jazyku PHP, ale kvôli väčšej možnosti rozšírenia a~ľahšej udržovateľnosti[3] vznikla potreba prepísať túto aplikáciu do jazyka Java.  Bližšie rozoberanie fungovania aplikácie RemSig, vrátane použitých technológii a~praktických príkladov je pokryté v~bakalárskej práci Silvie Vigašovej[2]. Z~tohto dôvodu sa budem samotnej aplikácií venovať iba v~rozsahu potrebnom pre túto bakalársku prácu.
+Aplikácia RemSig bola pôvodne napísaná v~jazyku PHP, ale kvôli väčšej možnosti rozšírenia a~ľahšej udržovateľnosti[3] vznikla potreba prepísať túto aplikáciu do jazyka Java.  Bližšie rozoberanie fungovania aplikácie RemSig, vrátane použitých technológii a~praktických príkladov je pokryté v~bakalárskej práci Silvie Vigašovej\cite{RemsigSilvia} \cite{RemsigSilvia1}. Z~tohto dôvodu sa budem samotnej aplikácií venovať iba v~rozsahu potrebnom pre túto bakalársku prácu. 
 
 
 
@@ -228,14 +237,17 @@ Pri sekvenciách, kde sú použité viaceré metódy je počet iterácii adekvá
 Cieľom bakalárskej práce bolo vytvoriť jednotkové, integračné a~výkonnostné testy pre aplikáciu RemSig, ktorá bola implementovaná v~jazyku Java. Pri testovaní boli postupne odhalené problémy rôznej závažnosti ktoré boli posunuté vývojovému tímu. \paragraph{}
 Pri vývoji som odhalil niekoľko nefunkčne implementovaných metód a~nezachytených výnimiek. Pri nefunkčných metódach som testy napísal podobne ako pri funkčných metódach, kde bol formát očakávaného výsledku vyčítaný zo zdrojového kódu aplikácie. Na správu obecných alebo často používaných metód bola vytvorená trieda TestManager. Túto triedu každý test do istej miery využíva. \paragraph{}
 Jednotkové testy pokrývajú všetky významné metódy. Nie sú pokryté metódy typu jednoduché nastavenie privátnej premennej. Integračné testy testujú volania metód priamo na serveri. Oproti jednotkovým testom, ktoré testujú výhradne metódy bez zasadenia do širších technológii akou jej server. Výkonnostné testy merajú rýchlosť spracovanie požiadaviek serverom.\paragraph{}
-Všetky požadované testy zo zadania boli napísané a~pripravené na nasedenie. Navyše bol napísaný aj Serverovský fork na minimalizovanie problémov s~nasadením, ktorý s~určitým časom sledovania odpovedí starého aj nového servera vie s~celkom veľkou pravdepodobnosťou odporučiť novú implementáciu k~ostrému prevozu. Všetky testy sú  implementované aby s~minimálnym úsilím mohli byť upravené na budúce meniace sa požiadavky pričom ale nestrácali nič na svojej relativite.\paragraph{}
-Cieľ bakalárskej práce bol splnený. Vytvorené testy odhalili, že testovaná aplikácia RemSig zatiaľ nie je pripravená do ostrého nasadenia. Je potrebné odstrániť všetky nájdené nedostatky a~aj potom by som neodporúčal RemSig napísaný v~Jave nasadiť, kým nebude dostatočne veľký počet zhodných odpovedí z~poskytnutého testu Fork. 
+Všetky požadované testy zo zadania boli napísané a~pripravené na nasadenie Navyše bol napísaný aj Serverovský fork na minimalizovanie problémov s~nasadením, ktorý s~určitým časom sledovania odpovedí starého aj nového servera vie s~celkom veľkou pravdepodobnosťou odporučiť novú implementáciu k~ostrému prevozu. Všetky testy sú  implementované aby s~minimálnym úsilím mohli byť upravené na budúce meniace sa požiadavky pričom ale nestrácali nič na svojej relativite.\paragraph{}
+Cieľ bakalárskej práce bol splnený. Vytvorené testy odhalili, že testovaná aplikácia RemSig zatiaľ nie je pripravená do ostrého nasadenia. Je potrebné odstrániť všetky nájdené nedostatky a~aj potom by som neodporúčal RemSig napísaný v~Jave nasadiť, kým nebude dostatočne veľký počet zhodných odpovedí z~poskytnutého testu Fork. \cite{mySqlBible}
 
 
 
-
+%\printbibliography{}
+\printbibliography[heading=bibintoc]
 %\bibliographystyle{}
 %\bibliography{}
+
+\nocite{*} 
 
 \chapter*{Literatúra}
 
