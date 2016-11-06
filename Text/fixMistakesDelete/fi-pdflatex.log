@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.30)  5 NOV 2016 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.30)  6 NOV 2016 19:00
 entering extended mode
 **./fi-pdflatex.tex
 (fi-pdflatex.tex
@@ -1898,8 +1898,8 @@ File: fithesis/style/mu/fithesis-12.clo 2016/01/07
 )) (fithesis/style/mu/fithesis-fi.sty
 Package: fithesis/style/mu/fithesis-fi 2016/01/07
 )
-Package hyperref Info: Option `unicode' set `true' on input line 98.
-Package hyperref Info: Option `unicode' set `true' on input line 98.
+Package hyperref Info: Option `unicode' set `true' on input line 99.
+Package hyperref Info: Option `unicode' set `true' on input line 99.
 
 (C:\Programs\TeX\MikTex\tex\generic\oberdiek\stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
@@ -1914,7 +1914,7 @@ Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'slovak'.
-(csquotes)                Using fallback style on input line 98.
+(csquotes)                Using fallback style on input line 99.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 Package biblatex Info: Trying to load language 'slovak'...
@@ -1940,34 +1940,35 @@ Package biblatex Info: ... file 'german.lbx' found.
 (C:\Programs\TeX\MikTex\tex\latex\biblatex\lbx\german.lbx
 File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 ) (fi-pdflatex.aux
-LaTeX Font Info:    Try loading font information for T2A+qpl on input line 69.
-LaTeX Font Info:    No file T2Aqpl.fd. on input line 69.
+LaTeX Font Info:    Try loading font information for T2A+qpl on input line 108.
+
+LaTeX Font Info:    No file T2Aqpl.fd. on input line 108.
 
 
 LaTeX Font Warning: Font shape `T2A/qpl/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 69.
+(Font)              using `T2A/cmr/m/n' instead on input line 108.
 
 )
 \openout1 = `fi-pdflatex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1978,19 +1979,9 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'fi-pdflatex.bbl' found.
- (fi-pdflatex.bbl
-! Illegal parameter number in definition of \abx@field@note.
-<to be read again> 
-                   o
-l.104   \endentry
-                 
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-)
-Package biblatex Info: Reference section=0 on input line 98.
-Package biblatex Info: Reference segment=0 on input line 98.
+ (fi-pdflatex.bbl)
+Package biblatex Info: Reference section=0 on input line 99.
+Package biblatex Info: Reference segment=0 on input line 99.
  ABD: EveryShipout initializing macros
 (C:\Programs\TeX\MikTex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2028,7 +2019,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \microtypecontext on input line 98.
+LaTeX Info: Redefining \microtypecontext on input line 99.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2043,7 +2034,7 @@ Package microtype Info: Redefining babel's language switching commands.
 (C:\Programs\TeX\MikTex\tex\latex\microtype\mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 99.
 
 (C:\Programs\TeX\MikTex\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2053,9 +2044,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count393
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
 
 (fi-pdflatex.out) (fi-pdflatex.out)
 \@outlinefile=\write7
@@ -2075,7 +2066,7 @@ Package microtype Info: Character `029' is missing
 File: fithesis/logo/mu/fithesis-fi.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi.pdf>
-Package pdftex.def Info: fithesis/logo/mu/fithesis-fi.pdf used on input line 98
+Package pdftex.def Info: fithesis/logo/mu/fithesis-fi.pdf used on input line 99
 .
 (pdftex.def)             Requested size: 113.81102pt x 114.20036pt.
 Package microtype Info: Character `029' is missing
@@ -2090,19 +2081,19 @@ File: fithesis/logo/mu/fithesis-fi-color.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi-color.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-fi-color.pdf used on input l
-ine 98.
+ine 99.
 (pdftex.def)             Requested size: 113.81102pt x 114.20036pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \begin{document}
+l.99 \begin{document}
                       [2 <./fithesis/logo/mu/fithesis-fi-color.pdf>]pdfTeX warn
 ing (ext4): destination with the same identifier (name{page.}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \begin{document}
+l.99 \begin{document}
                       [0] [1] [2] [3] [4] (fi-pdflatex.toc
 
 LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
@@ -2175,36 +2166,27 @@ Kapitola 1.
 ] [2]
 Kapitola 2.
 
-Overfull \hbox (6.45552pt too wide) in paragraph at lines 107--108
-\T1/qpl/m/n/12 (-20) Digitálny pod-pis je ma-te-ma-tická tech-nika na ove-re-ni
-e au-ten-ti-city(pôvod
- []
-
-
 Underfull \vbox (badness 1147) has occurred while \output is active []
 
  [3]
 [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 126.
 
-LaTeX Font Info:    No file OMSqpl.fd. on input line 125.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 126.
 
 
 LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 125.
-
-
-LaTeX Warning: Citation 'RemsigSilvia1' on page 6 undefined on input line 135.
+(Font)              for symbol `textbullet' on input line 126.
 
 [6]
 Kapitola 3.
 [7] [8] [9] [10]
 Kapitola 4.
-[11] [12] [13] [14] [15] [16] [17]
+[11] [12] [13] [14] [15] [16]
 Kapitola 5.
-[18]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 246.
+[17] [18]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 244.
 
  (C:\Programs\TeX\MikTex\tex\latex\lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2213,125 +2195,55 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [19]
+Overfull \hbox (8.91212pt too wide) in paragraph at lines 245--245
+\T1/qpl/m/it/12 terns & prac-ti-ces\T1/qpl/m/n/12 (-20) . Uni-ted Sta-tes?: Mic
+-ro-soft, c2007. ISBN 0735625700. 
+ []
 
-! Illegal parameter number in definition of \abx@field@note.
-<to be read again> 
-                   o
-l.246 \printbibliography[heading=bibintoc]
-                                          
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-! Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   o
-l.246 \printbibliography[heading=bibintoc]
-                                          
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-! Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   o
-l.246 \printbibliography[heading=bibintoc]
-                                          
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-[19]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246 \printbibliography[heading=bibintoc]
-                                          
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246 \printbibliography[heading=bibintoc]
-                                          
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced alignment tab character &.
-<argument> ...nce for web applications: patterns &
-                                                   practices
-l.246 \printbibliography[heading=bibintoc]
-                                          
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[20] [21]
+[20]
 Dodatok A.
-[22]
+[21]
 
 Package catoptions Warning: Undefined options 
 (catoptions)                [Family, Option, Value]: 
 (catoptions)                fontenc.sty,T1,. 
 (catoptions)                Default action already taken in each case .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
 (fi-pdflatex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package rerunfilecheck Info: File `fi-pdflatex.out' has not changed.
+(rerunfilecheck)             Checksum: 8191ED39678FDFC36701B0F2233AC38E;2610.
 
-
-Package rerunfilecheck Warning: File `fi-pdflatex.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `fi-pdflatex.out':
-(rerunfilecheck)             Before: 8191ED39678FDFC36701B0F2233AC38E;2610
-(rerunfilecheck)             After:  FCC990E453A279DE0FC4294FEA0E498F;2661.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                fi-pdflatex
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'fi-pdflatex.run.xml'.
 \openout1 = `fi-pdflatex.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41848 strings out of 493334
- 752048 string characters out of 3141473
- 1331664 words of memory out of 3000000
+ 41836 strings out of 493334
+ 751962 string characters out of 3141473
+ 1330664 words of memory out of 3000000
  44439 multiletter control sequences out of 15000+200000
- 67705 words of font info for 110 fonts, out of 3000000 for 9000
+ 63652 words of font info for 101 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,84p,10405b,1876s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Programs/TeX/MikTex/fonts/enc/dvips/fontname/8r.enc}{C:/Programs/TeX/MikT
-ex/fonts/enc/dvips/lm/lm-ec.enc}{C:/Programs/TeX/MikTex/fonts/enc/dvips/cm-supe
-r/cm-super-t2a.enc}{C:/Programs/TeX/MikTex/fonts/enc/dvips/tex-gyre/q-ec.enc}{C
-:/Programs/TeX/MikTex/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}<C:/Programs/TeX/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Programs/TeX/MikTex/fonts/typ
-e1/public/lm/lmtt12.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyre/qpl
-b.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyre/qplr.pfb><C:/Programs
-/TeX/MikTex/fonts/type1/public/tex-gyre/qplri.pfb><C:/Programs/TeX/MikTex/fonts
-/type1/public/cm-super/sfrm1200.pfb><C:/Programs/TeX/MikTex/fonts/type1/urw/pal
-atino/uplri8a.pfb>
-Output written on fi-pdflatex.pdf (30 pages, 280759 bytes).
+{C:/Programs/TeX/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{C:/Programs/TeX/MikTex/
+fonts/enc/dvips/cm-super/cm-super-t2a.enc}{C:/Programs/TeX/MikTex/fonts/enc/dvi
+ps/tex-gyre/q-ec.enc}{C:/Programs/TeX/MikTex/fonts/enc/dvips/tex-gyre/q-ec-sc.e
+nc}<C:/Programs/TeX/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
+ms/TeX/MikTex/fonts/type1/public/lm/lmtt12.pfb><C:/Programs/TeX/MikTex/fonts/ty
+pe1/public/tex-gyre/qplb.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyr
+e/qplr.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyre/qplri.pfb><C:/Pr
+ograms/TeX/MikTex/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on fi-pdflatex.pdf (29 pages, 278835 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
  17255 words of extra memory for PDF output out of 17280 (max. 10000000)
 
