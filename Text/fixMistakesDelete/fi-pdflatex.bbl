@@ -370,23 +370,5 @@
   <\url{http://www.tutorialspoint.com/java/lang/system\_nanotime.htm}>}
     \field{title}{system\_nanotime}
   \endentry
-
-  \entry{density}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=H}{%
-         family={{HEIJDEN, F., ZIVKOVIC, Z}},
-         familyi={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{H1}
-    \strng{fullhash}{H1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{[cit. 13.~5. 2015] Pattern Recognition Letters, 2006, roč.
-  27, č. 7, s. 773--780. Dostupné z:
-  <\url{http://www.zoranz.net/Publications/zivkovicPRL2006.pdf}>}
-    \field{title}{Efficient Adaptive Density Estimation per Image Pixel for the
-  Task of Background Subtraction}
-  \endentry
 \endsortlist
 \endinput

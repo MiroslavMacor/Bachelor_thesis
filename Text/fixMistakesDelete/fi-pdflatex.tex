@@ -55,7 +55,7 @@ oneside,
     title         = {Sada testov pre aplikáciu Remsig},
     TeXtitle      = {Sada testov pre aplikáciu Remsig},
     keywords      = {keyword1, keyword2, ...},
-    TeXkeywords   = {RemSig, unit testy, integračné testy, výkonnostné testy},
+    TeXkeywords   = {RemSig, jednotkové testy, integračné testy, výkonnostné testy},
 }
 \thesislong{thanks}{
  Ďakujem vedúcemu práce RNDr. Danielovi Kouřilovi, Ph.d za ústretovú a odbornú pomoc pri tvorení bakalárskej práce a za čas venovaný riešeniu technických problémov. Ďakujem Silvii Vigašovej za netriviálnu pomoc pri úvodnom rozbiehaní aplikácie RemSig. Ďakujem mojej rodine za neustálu podporu.
@@ -138,14 +138,15 @@ Aplikácia RemSig bola pôvodne napísaná v~jazyku PHP, ale kvôli väčšej mo
 
 
 \chapter{Testy}
-Testy v~informatike sú programy alebo časti programov navrhnuté na overenie funkcionality testovaného produktu. Typy testov sa enormne líšia v~závislosti od veľkosti testovaného kódu, spôsobov testovania a~očakávaných výsledkov. Pri obrovskom množstve typov testov a~spôsobov testovania je úlohou vývojového tímu zvoliť správnu cestu pre maximálne ošetrenie aplikácie, a~zároveň šetrenia tímových prostriedkov ako je napríklad čas \cite{ssl}. V~tejto kapitole sú rozobrané len niektoré testovacie procesy a~typy testov, ktoré prevažne súvisia s~praktickou časťou.\paragraph{}
+Testy v~informatike sú programy alebo časti programov navrhnuté na overenie funkcionality testovaného produktu. Toto je primárna úloha testov ale testy slúžia, okrem iného, aj na poskytnutie dokumentácie pre potreby programátora, overenie nezmenenej funkcionality pri refaktorácii, uľahčennie hľadania bugov, tým pádom skrátenie času potrebného na debugovanie, atď. \paragraph{}
+Typy testov sa enormne líšia v~závislosti od veľkosti testovaného kódu, spôsobov testovania a~očakávaných výsledkov. Pri obrovskom množstve typov testov a~spôsobov testovania je úlohou vývojového tímu zvoliť správnu cestu pre maximálne ošetrenie aplikácie, a~zároveň šetrenia tímových prostriedkov ako je napríklad čas \cite{ssl}. V~tejto kapitole sú rozobrané len niektoré testovacie procesy a~typy testov, ktoré prevažne súvisia s~praktickou časťou.\paragraph{}
 Jedno z~takýchto rozdelení testov je  testovanie, či sa aplikácia správa ako sa očakáva, a~či sa aplikácia nespráva neočakávane. Pri testovaní očakávaného správania sa pozoruje chovanie aplikácie so správnymi parametrami a~ s~nesprávnymi parametrami. Na druhú stranu pri testovaní neočakávaného správania je snaha dosiahnuť neočakávané správanie  testovaného kódu, alebo aplikácie. Testujú sa hraničné hodnoty, a~hodnoty za hranicami. Ako parametre sa udávajú úplne nezmyselné hodnoty, znaky v~nezvyčajnom kódovaní. V~prípade potreby autentizácie môžu byť ako parametre prázdne polia alebo príkazy (DROP DATABASE - vymaže údaje z~databázy). \paragraph{}
 Ako príklad uvediem triviálnu aplikácia na súčet. Pri testovaní predpokladaného správania sa otestuje či 2 + 2 je 4, a~či 5 +2 nie je 4. Pri kontrole nepredpokladaného správania sa testuje či 2 +a, (maximálna hodnota typu Integer) + 2 alebo \begin{otherlanguage}{russian} и \end{otherlanguage}  +5   nespôsobí pád aplikácie ale tiež či aplikácia nevráti hodnoty, ktoré považuje za korektné. \paragraph{}
 
 \section{Tradičné testovanie proti Vývojom riadenými testami}
 
 Pri problematike tvorby testov existuje niekoľko protikladných názorov, pričom najväčší rozpor je v~ideálnom čase písania testov. Tu sa stretávajú dve protichodné myšlienky. Tradičné testovanie a~Vývoj riadený testami (z anglického  Test-driven development (TDD))\cite{softwareTesting}. \paragraph{}
-V tradičnom testovaní sú všetky testy písané až po dokončení kódu. Tento postup prináša výhody v~podobe rýchleho dokončenia tvorby požadovanej aplikácie a~menšej potreby upravovania kódu, z~dôvodu upresnenia alebo pozmenenia zadania. Samotné testy ale potencionálne strácajú na kvalite z~nevyhnutnej  potreby špecializácie testov na konkrétny kód. Ako je aj závislosť na skutočných dátach, čo navádza k~neodhaleným problémom a~neskorším odchýlkam v~nasledujúcich implementáciách.\paragraph{}
+V tradičnom testovaní sú všetky testy písané až po dokončení kódu. Tento postup prináša výhody v~podobe rýchleho dokončenia tvorby požadovanej aplikácie a~menšej potreby upravovania kódu, z~dôvodu upresnenia alebo pozmenenia zadania. Samotné testy ale potencionálne strácajú na kvalite z~nevyhnutnej  potreby špecializácie testov na konkrétny kód. Ako je aj závislosť na skutočných dátach, čo navádza k~neodhaleným problémom a~neskorším odchýlkam v~nasledujúcich implementáciách. Pokrytie aplikácie testami je ďalšia nevýhoda tradičného testovania.  \paragraph{}
 Ako odpoveď na tieto problémy vzniklo čiastočne z~extrémneho programovania TDD. Extrémne programovanie je špecifické neustálou adopciou na meniace sa požiadavky zákazníka. Medzi identifikujúce znaky extrémneho programovania patrí neustále testovanie, programovanie v~pároch (dvaja programátori za jedným počítačom), alebo implementovanie  iba tých nevyhnutných funkcií pre realizovanie kódu. TDD sa zakladá na malých stále sa opakujúcich krokoch, ktoré vedú k~zefektívneniu celého vývoja. \paragraph{}
 Prvý krok je napísať test a~overiť, že test zlyhá. Nasleduje vytvorenie kódu a~spustenie testov. Posledný krok je refaktorovanie. Refaktorovanie je proces~úprav a~zmeny kódu za účelom zlepšenia priehľadnosti a~udržateľnosti kódu pričom sa ale nemení funkcionalita kódu. V~tomto kroku sa venuje efektivite, čitateľnosti a~udržateľnosti kódu. Kód je presunutý na miesto, kde v~projekte logicky patrí a~sú odstránené duplicity kódu. Pri refaktorovaní, testy slúžia na overenie nezmenenej funkcionality. Celý proces~sa opakuje napísaním testov pre ďalšiu časť požadovanej aplikácie.
 
@@ -155,7 +156,7 @@ Jednotkové (z anglického unit) testy sú špecializované na najmenšie jednot
 Integračné testy sú vykonávané po vytvorení jednotkových testov a~slúžia na overenie funkcionality väčších celkov a~prepojenie menších jednotiek do komplexnejších systémov \cite{testSeparation}. Cieľ integračných testov je preveriť funkčnosť a~spoľahlivosť so simulovanými údajmi. Integračné testy sú zamerané na testovanie fungovania niekoľkých prepojených jednotiek alebo systémov.\paragraph{}
 Môžu byť použité na otestovanie dvoch jednotiek predchádzajúc testované jednotkovými testami alebo na kontrolu komunikácie aplikácie s~databázou a~následnú komunikáciu s~webovým serverom. Integračné testy sú obvykle pomalšie a~je náročnejšie lokalizovať bod zlyhania ako v~jednotkových  testoch. Preto sa odporúča ich testovať iba na kóde pokrytom jednotkovými testami.
 \section{Výkonnostné testy}
-Výkonnostné testovanie je zamerané na určenie priepustnosti, spoľahlivosti, schopnosti reagovať a~škálovateľnosti systému pod určitou záťažou \cite{perfromanceTest}\cite{ssl3.0}. Výkonnostné testovanie je možné rozdeliť na výkonnostné testy, záťažové test a~stresové testy.\paragraph{}
+Výkonnostné testovanie je zamerané na určenie priepustnosti, spoľahlivosti, schopnosti reagovať a~škálovateľnosti systému pod určitou záťažou \cite{ssl3.0}\cite{perfromanceTest}. Výkonnostné testovanie je možné rozdeliť na výkonnostné testy, záťažové test a~stresové testy.\paragraph{}
 Výkonnostné testy slúžia na zistenie rýchlosti a~škálovateľnosti systému pod záťažou. Záťažové testy sú spúšťané na overenie fungovanie aplikácie v~predpokladaných podmienkach. Úloha stresových  testov je overiť, pod akou maximálnou záťažou je aplikácia stále schopná normálneho behu \cite{effectiveSoftwareTesting}. Záťažové testy by tiež mali identifikovať bod, v~ktorom aplikácia už nie je schopná ďalej fungovať.\paragraph{}
 Výkonnostné testovanie slúžia na odhadnutie pripravenosti produktu, odhalenia zdroju problému s~výkonnom alebo  identifikovanie miesta, kde jeden zdroj spomaľuje výkon celej aplikácie tiež známe ako bottleneck. Pri úspešnom odstránení miesta bottleneck sa zvyšuje výkon celej aplikácie.
 \chapter{RemSig testy}
@@ -227,9 +228,29 @@ Sekvencia 3 – changeStatus(), dva rozdielne vstupné parametre, prvý zmení s
 Pri sekvenciách, kde sú použité viaceré metódy je počet iterácii adekvátne upravený pre zachovanie nemennosti tabuľky. 
 
 \begin{table}[htbp]
-
-\caption{Ukážka nameraných hodnôt}
-\label{table:power}
+	\begin{center}\scalebox{1}{%\tabcolsep=0.11cm
+			\begin{tabular}{lcc}
+				\midrule
+				názov metódy &  sto opakovaní (s) &  tisíc opakovaní (s)\tabularnewline
+				\midrule
+				generateRequestu & 85,387 & 868\tabularnewline
+				
+				exportPKCS12 & 10 & 95\tabularnewline
+				sign   & 19 & 182\tabularnewline
+				listCertitficate  & 11 & 95\tabularnewline
+				listAllCertificates & 11 & 96\tabularnewline
+				checkPassword & 11 & 100\tabularnewline
+				Sekvencia 1 & 14 & 132\tabularnewline
+				Sekvencia 2 & 11 & 98\tabularnewline
+				Sekvencia 3 & 11 & 104\tabularnewline
+				\bottomrule
+				
+				\bottomrule
+			\end{tabular}
+		}
+	\end{center}
+	\caption{Ukážka nameraných hodnôt}
+	\label{table:power}
 \end{table}
 
 
@@ -243,7 +264,7 @@ Cieľ bakalárskej práce bol splnený. Vytvorené testy odhalili, že testovan�
 
 \printbibliography
 
-\nocite{*} 
+%\nocite{*} 
   
 
 \begin{appendix}
