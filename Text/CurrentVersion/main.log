@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.30)  13 NOV 2016 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.30)  17 NOV 2016 19:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -2062,7 +2062,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<fithesis/logo/mu/fithesis-fi.pdf, id=140, 291.0875pt x 292.09125pt>
+<fithesis/logo/mu/fithesis-fi.pdf, id=144, 291.0875pt x 292.09125pt>
 File: fithesis/logo/mu/fithesis-fi.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi.pdf>
@@ -2076,7 +2076,7 @@ Package microtype Info: Character `029' is missing
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./fithesis/logo/mu/fithes
 is-fi.pdf>]
-<fithesis/logo/mu/fithesis-fi-color.pdf, id=151, 291.0875pt x 292.09125pt>
+<fithesis/logo/mu/fithesis-fi-color.pdf, id=155, 291.0875pt x 292.09125pt>
 File: fithesis/logo/mu/fithesis-fi-color.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi-color.pdf>
@@ -2204,12 +2204,12 @@ LaTeX Warning: Citation 'untestable code' on page 9 undefined on input line 161
 Kapitola 4.
 [11]
 
-LaTeX Warning: Citation 'mockovanie' on page 12 undefined on input line 188.
+LaTeX Warning: Citation 'mockovanie' on page 12 undefined on input line 186.
 
-[12] [13] [14] [15] [16] [17]
+[12] [13] [14] [15] [16] [17] [18] [19]
 Kapitola 5.
-[18] [19]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 283.
+[20]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 295.
 
  (C:\Programs\TeX\MikTex\tex\latex\lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2218,28 +2218,28 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [20]
-Overfull \hbox (8.91212pt too wide) in paragraph at lines 284--284
+ [21]
+Overfull \hbox (8.91212pt too wide) in paragraph at lines 296--296
 \T1/qpl/m/it/12 terns & prac-ti-ces\T1/qpl/m/n/12 (-20) . Uni-ted Sta-tes?: Mic
 -ro-soft, c2007. ISBN 0735625700. 
  []
 
-[21]
-Dodatok A.
 [22]
+Dodatok A.
+[23]
 
 Package catoptions Warning: Undefined options 
 (catoptions)                [Family, Option, Value]: 
 (catoptions)                fontenc.sty,T1,. 
 (catoptions)                Default action already taken in each case .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8191ED39678FDFC36701B0F2233AC38E;2610.
+(rerunfilecheck)             Checksum: E3B2754ECC165C4567497D2D5B86EC97;2690.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2257,13 +2257,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41840 strings out of 493334
- 751799 string characters out of 3141473
+ 41852 strings out of 493334
+ 751914 string characters out of 3141473
  1330638 words of memory out of 3000000
- 44438 multiletter control sequences out of 15000+200000
+ 44439 multiletter control sequences out of 15000+200000
  63785 words of font info for 102 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,10n,84p,10398b,1876s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,11n,84p,10398b,1876s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Programs/TeX/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{C:/Programs/TeX/MikTex/
 fonts/enc/dvips/cm-super/cm-super-t2a.enc}{C:/Programs/TeX/MikTex/fonts/enc/dvi
 ps/tex-gyre/q-ec.enc}{C:/Programs/TeX/MikTex/fonts/enc/dvips/tex-gyre/q-ec-sc.e
@@ -2272,9 +2272,9 @@ ms/TeX/MikTex/fonts/type1/public/lm/lmtt12.pfb><C:/Programs/TeX/MikTex/fonts/ty
 pe1/public/tex-gyre/qplb.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyr
 e/qplr.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyre/qplri.pfb><C:/Pr
 ograms/TeX/MikTex/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (30 pages, 283868 bytes).
+Output written on main.pdf (31 pages, 289338 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 17255 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 17263 words of extra memory for PDF output out of 17280 (max. 10000000)
 
