@@ -19,15 +19,13 @@
 \sortlist[entry]{none/global/}
   \entry{agileDef}{misc}{}
     \name{author}{1}{}{%
-      {{hash=WK}{%
-         family={WATERS},
+      {{hash=W}{%
+         family={{WATERS, Kelly}},
          familyi={W\bibinitperiod},
-         given={Kelly},
-         giveni={K\bibinitperiod},
       }}%
     }
-    \strng{namehash}{WK1}
-    \strng{fullhash}{WK1}
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -44,33 +42,29 @@
 
   \entry{digitalSignature}{misc}{}
     \name{author}{1}{}{%
-      {{hash=RM}{%
-         family={ROUSE},
+      {{hash=R}{%
+         family={{ROUSE, Margaret}},
          familyi={R\bibinitperiod},
-         given={Margret},
-         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RM2}
-    \strng{fullhash}{RM2}
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
-  <\url{http://searchsecurity.techtarget.com/definition/digital-signature>}}
+  <\url{http://searchsecurity.techtarget.com/definition/digital-signature}>}
     \field{title}{digital signature}
   \endentry
 
   \entry{ssl}{misc}{}
     \name{author}{1}{}{%
-      {{hash=RE}{%
-         family={RESCORLA},
+      {{hash=R}{%
+         family={{RESCORLA, Eric}},
          familyi={R\bibinitperiod},
-         given={Eric},
-         giveni={E\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RE1}
-    \strng{fullhash}{RE1}
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Boston: Addison-Wesley, c2001. ISBN 0201615983. s. 44-100,
@@ -80,15 +74,13 @@
 
   \entry{sslOnline}{misc}{}
     \name{author}{1}{}{%
-      {{hash=RM}{%
-         family={ROUSE},
+      {{hash=R}{%
+         family={{ROUSE, Margaret}},
          familyi={R\bibinitperiod},
-         given={Margaret},
-         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RM1}
-    \strng{fullhash}{RM1}
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -105,15 +97,13 @@
 
   \entry{ssl3.0}{misc}{}
     \name{author}{1}{}{%
-      {{hash=Fea}{%
-         family={FREIER},
+      {{hash=F}{%
+         family={{FREIER, et al}},
          familyi={F\bibinitperiod},
-         given={et\bibnamedelima al},
-         giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
       }}%
     }
-    \strng{namehash}{Fea1}
-    \strng{fullhash}{Fea1}
+    \strng{namehash}{F3}
+    \strng{fullhash}{F3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -123,15 +113,13 @@
 
   \entry{x509cert}{misc}{}
     \name{author}{1}{}{%
-      {{hash=RM}{%
-         family={ROUSE},
+      {{hash=R}{%
+         family={{ROUSE, Margaret}},
          familyi={R\bibinitperiod},
-         given={Margaret},
-         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RM1}
-    \strng{fullhash}{RM1}
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -141,15 +129,13 @@
 
   \entry{certificateAuth}{misc}{}
     \name{author}{1}{}{%
-      {{hash=RM}{%
-         family={ROUSE},
+      {{hash=R}{%
+         family={{ROUSE, Margaret}},
          familyi={R\bibinitperiod},
-         given={Margaret},
-         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RM1}
-    \strng{fullhash}{RM1}
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -178,17 +164,32 @@
     \field{title}{actorization of a 768-bit RSA modulus}
   \endentry
 
-  \entry{javaVsPHP}{misc}{}
+  \entry{privateKeyStorage}{misc}{}
     \name{author}{1}{}{%
-      {{hash=LF}{%
-         family={LANGE},
-         familyi={L\bibinitperiod},
-         given={Fabian},
-         giveni={F\bibinitperiod},
+      {{hash=S}{%
+         family={{SELTZER, Larry}},
+         familyi={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{LF1}
-    \strng{fullhash}{LF1}
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[PDF] Dostupné z:
+  <\url{https://www.thawte.com/code-signing/whitepaper/best-practices-for-code-signing-certificates.pdf}>}
+    \field{title}{Securing Your Private Keys as Best Practice for Code Signing
+  Certificates}
+  \endentry
+
+  \entry{javaVsPHP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{LANGE, Fabian}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -198,15 +199,13 @@
 
   \entry{remsigSilvia}{misc}{}
     \name{author}{1}{}{%
-      {{hash=VS}{%
-         family={VIGAŠOVÁ},
+      {{hash=V}{%
+         family={{VIGAŠOVÁ, Silvia}},
          familyi={V\bibinitperiod},
-         given={Silvia},
-         giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{VS1}
-    \strng{fullhash}{VS1}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -221,17 +220,31 @@
     \field{title}{Software testing}
   \endentry
 
-  \entry{codeMaintability}{misc}{}
+  \entry{cleanCode}{misc}{}
     \name{author}{1}{}{%
-      {{hash=FMC}{%
-         family={FEATHERS},
-         familyi={F\bibinitperiod},
-         given={Michael\bibnamedelima C},
-         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      {{hash=M}{%
+         family={{MARTIN, Rober C.}},
+         familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{FMC1}
-    \strng{fullhash}{FMC1}
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{[PDF] Dostupné z:
+  <\url{http://ptgmedia.pearsoncmg.com/images/9780132350884/samplepages/9780132350884.pdf}>}
+    \field{title}{Clean Code: A Handbook of Agile Software Craftsmanship}
+  \endentry
+
+  \entry{codeMaintability}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{FEATHERS, Michael C}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Brno: Computer Press, 2009. ISBN 978-80-251-2127-6. s. 24}
@@ -240,15 +253,13 @@
 
   \entry{effectiveSoftwareTesting}{misc}{}
     \name{author}{1}{}{%
-      {{hash=PWE}{%
-         family={PERRY},
+      {{hash=P}{%
+         family={{PERRY, William E}},
          familyi={P\bibinitperiod},
-         given={William\bibnamedelima E},
-         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \strng{namehash}{PWE1}
-    \strng{fullhash}{PWE1}
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{New York: Wiley, c1995. ISBN 0471060976. 3 - 179}
@@ -257,15 +268,13 @@
 
   \entry{unitTest}{misc}{}
     \name{author}{1}{}{%
-      {{hash=FM}{%
-         family={FOWLER},
+      {{hash=F}{%
+         family={{FOWLER, Martin}},
          familyi={F\bibinitperiod},
-         given={Martin},
-         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{FM1}
-    \strng{fullhash}{FM1}
+    \strng{namehash}{F2}
+    \strng{fullhash}{F2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -283,15 +292,13 @@
 
   \entry{perfromanceTest}{misc}{}
     \name{author}{1}{}{%
-      {{hash=MJD}{%
-         family={MEIER},
+      {{hash=M}{%
+         family={{MEIER, J. D}},
          familyi={M\bibinitperiod},
-         given={J.\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D},
       }}%
     }
-    \strng{namehash}{MJD1}
-    \strng{fullhash}{MJD1}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{United States?: Microsoft, c2007. ISBN 0735625700.}
@@ -315,15 +322,13 @@
 
   \entry{gitHubAnalysis}{misc}{}
     \name{author}{1}{}{%
-      {{hash=WT}{%
-         family={WEISS},
+      {{hash=W}{%
+         family={{WEISS, Tall}},
          familyi={W\bibinitperiod},
-         given={Tall},
-         giveni={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{WT1}
-    \strng{fullhash}{WT1}
+    \strng{namehash}{W2}
+    \strng{fullhash}{W2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -334,20 +339,25 @@
 
   \entry{mySqlBible}{misc}{}
     \name{author}{1}{}{%
-      {{hash=SS}{%
-         family={SUEHRING},
+      {{hash=S}{%
+         family={{SUEHRING, Steve}},
          familyi={S\bibinitperiod},
-         given={Steve},
-         giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SS1}
-    \strng{fullhash}{SS1}
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{(PDF) Wiley Publishing, Inc. Dostupné z:
   <\url{http://www.chettinadtech.ac.in/g_article/Textbook2\%20\%20MySQL\%20Bible.pdf}>}
     \field{title}{MySQL Bible}
+  \endentry
+
+  \entry{mocking}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[PDF] Dostupné z:
+  <\url{https://msdn.microsoft.com/en-us/library/ff650441.aspx}>}
+    \field{title}{Unit Testing with Mock Objects}
   \endentry
 
   \entry{servlet}{misc}{}
