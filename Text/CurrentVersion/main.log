@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.30)  17 NOV 2016 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.30)  20 NOV 2016 23:44
 entering extended mode
 **./main.tex
 (main.tex
@@ -1940,13 +1940,13 @@ Package biblatex Info: ... file 'german.lbx' found.
 (C:\Programs\TeX\MikTex\tex\latex\biblatex\lbx\german.lbx
 File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 ) (main.aux
-LaTeX Font Info:    Try loading font information for T2A+qpl on input line 109.
+LaTeX Font Info:    Try loading font information for T2A+qpl on input line 110.
 
-LaTeX Font Info:    No file T2Aqpl.fd. on input line 109.
+LaTeX Font Info:    No file T2Aqpl.fd. on input line 110.
 
 
 LaTeX Font Warning: Font shape `T2A/qpl/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 109.
+(Font)              using `T2A/cmr/m/n' instead on input line 110.
 
 )
 \openout1 = `main.aux'.
@@ -2062,7 +2062,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<fithesis/logo/mu/fithesis-fi.pdf, id=144, 291.0875pt x 292.09125pt>
+<fithesis/logo/mu/fithesis-fi.pdf, id=148, 291.0875pt x 292.09125pt>
 File: fithesis/logo/mu/fithesis-fi.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi.pdf>
@@ -2076,7 +2076,7 @@ Package microtype Info: Character `029' is missing
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./fithesis/logo/mu/fithes
 is-fi.pdf>]
-<fithesis/logo/mu/fithesis-fi-color.pdf, id=155, 291.0875pt x 292.09125pt>
+<fithesis/logo/mu/fithesis-fi-color.pdf, id=159, 291.0875pt x 292.09125pt>
 File: fithesis/logo/mu/fithesis-fi-color.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi-color.pdf>
@@ -2166,50 +2166,50 @@ Kapitola 1.
 ] [2]
 Kapitola 2.
 
-Underfull \vbox (badness 1147) has occurred while \output is active []
+Underfull \vbox (badness 2635) has occurred while \output is active []
 
  [3]
 [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 126.
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 130.
 
-LaTeX Font Info:    No file OMSqpl.fd. on input line 126.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 130.
 
 
 LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 126.
+(Font)              for symbol `textbullet' on input line 130.
 
 [6]
 Kapitola 3.
 
-LaTeX Warning: Reference `refact' on page 7 undefined on input line 141.
+LaTeX Warning: Reference `refact' on page 7 undefined on input line 145.
 
 [7]
 
 LaTeX Warning: Citation 'The Three Laws of TDD (Clean Code: A Handbook of Agile
  Software Craftsmanship by Robert C. Martin p.122).' on page 8 undefined on inp
-ut line 155.
+ut line 159.
 
 
-Overfull \hbox (262.89812pt too wide) in paragraph at lines 153--157
+Overfull \hbox (262.89812pt too wide) in paragraph at lines 157--161
 \T1/qpl/m/n/12 (-20) [[]] 
  []
 
 [8]
 
-LaTeX Warning: Citation 'untestable code' on page 9 undefined on input line 161
+LaTeX Warning: Citation 'untestable code' on page 9 undefined on input line 165
 .
 
 [9] [10]
 Kapitola 4.
 [11]
 
-LaTeX Warning: Citation 'mockovanie' on page 12 undefined on input line 186.
+LaTeX Warning: Citation 'mockovanie' on page 12 undefined on input line 190.
 
-[12] [13] [14] [15] [16] [17] [18] [19]
+[12] [13] [14] [15] [16] [17] [18] [19] [20]
 Kapitola 5.
-[20]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 295.
+[21]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 303.
 
  (C:\Programs\TeX\MikTex\tex\latex\lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2218,29 +2218,35 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [21]
-Overfull \hbox (8.91212pt too wide) in paragraph at lines 296--296
+ [22]
+Overfull \hbox (8.91212pt too wide) in paragraph at lines 304--304
 \T1/qpl/m/it/12 terns & prac-ti-ces\T1/qpl/m/n/12 (-20) . Uni-ted Sta-tes?: Mic
 -ro-soft, c2007. ISBN 0735625700. 
  []
 
-[22]
-Dodatok A.
 [23]
+Dodatok A.
+[24]
 
 Package catoptions Warning: Undefined options 
 (catoptions)                [Family, Option, Value]: 
 (catoptions)                fontenc.sty,T1,. 
 (catoptions)                Default action already taken in each case .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E3B2754ECC165C4567497D2D5B86EC97;2690.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: B18DD3B88EF31369E1DD81518336A4E3;2755
+(rerunfilecheck)             After:  88CF72149BD1A184EAE1DC24EF37C4DE;2749.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2257,10 +2263,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41852 strings out of 493334
- 751914 string characters out of 3141473
+ 41854 strings out of 493334
+ 751934 string characters out of 3141473
  1330638 words of memory out of 3000000
- 44439 multiletter control sequences out of 15000+200000
+ 44440 multiletter control sequences out of 15000+200000
  63785 words of font info for 102 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,11n,84p,10398b,1876s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2272,9 +2278,9 @@ ms/TeX/MikTex/fonts/type1/public/lm/lmtt12.pfb><C:/Programs/TeX/MikTex/fonts/ty
 pe1/public/tex-gyre/qplb.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyr
 e/qplr.pfb><C:/Programs/TeX/MikTex/fonts/type1/public/tex-gyre/qplri.pfb><C:/Pr
 ograms/TeX/MikTex/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (31 pages, 289338 bytes).
+Output written on main.pdf (32 pages, 292060 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
- 17263 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 17271 words of extra memory for PDF output out of 17280 (max. 10000000)
 

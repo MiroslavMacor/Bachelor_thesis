@@ -1,10 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: biblatex.bst
-White space in argument---line 52 of file main.aux
+White space in argument---line 118 of file main.aux
  : \citation{The
  :               Three Laws of TDD (Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin p.122).}
 I'm skipping whatever remains of this command
-White space in argument---line 55 of file main.aux
+White space in argument---line 125 of file main.aux
  : \citation{untestable
  :                      code}
 I'm skipping whatever remains of this command
