@@ -68,7 +68,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{9}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}\slshape Tradi\IeC {\v c}n\IeC {\'e} testovanie alebo V\IeC {\'y}voj riaden\IeC {\'y}mi testami}{9}{section.3.1}
+\contentsline {section}{\numberline {3.1}\slshape Tradi\IeC {\v c}n\IeC {\'e} testovanie alebo V\IeC {\'y}voj riaden\IeC {\'y} testami}{9}{section.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{9}{section*.30}
 \defcounter {refsection}{0}\relax 
@@ -78,7 +78,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}\slshape Jednotkov\IeC {\'e} testy}{10}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}\slshape Integra\IeC {\v c}n\IeC {\'e} testy}{11}{section.3.3}
+\contentsline {section}{\numberline {3.3}\slshape Integra\IeC {\v c}n\IeC {\'e} testy}{10}{section.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{11}{section*.33}
 \defcounter {refsection}{0}\relax 
@@ -160,8 +160,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{23}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{23}{section*.55}
+\contentsline {paragraph}{\rmfamily }{24}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{23}{section*.56}
+\contentsline {paragraph}{\rmfamily }{24}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{27}{appendix.A}
+\contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{28}{appendix.A}

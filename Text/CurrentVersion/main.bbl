@@ -70,8 +70,8 @@
          familyi={F\bibinitperiod},
       }}%
     }
-    \strng{namehash}{F3}
-    \strng{fullhash}{F3}
+    \strng{namehash}{F4}
+    \strng{fullhash}{F4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
@@ -195,6 +195,21 @@
     \field{note}{[online] Dostupné z:
   <\url{http://is.muni.cz/th/409781/fi\_b/vigasova\_bp.pdf}>}
     \field{title}{Client tools for RemSig}
+  \endentry
+
+  \entry{refact}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{FOWLER, Martin C}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F3}
+    \strng{fullhash}{F3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Addison-Wesley. ISBN 0-201-48567-2.}
+    \field{title}{Refactoring. Improving the Design of Existing Code}
   \endentry
 
   \entry{softwareTesting}{misc}{}
