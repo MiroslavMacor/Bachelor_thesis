@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}\slshape Digit\IeC {\'a}lne podpisy}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}\slshape SSL zabezpe\IeC {\v c}enie}{3}{section.2.2}
+\contentsline {section}{\numberline {2.2}\slshape SSL/TLS zabezpe\IeC {\v c}enie}{3}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{4}{section*.11}
 \defcounter {refsection}{0}\relax 
@@ -26,11 +26,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{4}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}\slshape Zabezpe\IeC {\v c}enie s\IeC {\'u}kromn\IeC {\'e}ho k\IeC {\v l}\IeC {\'u}\IeC {\v c}a }{4}{section.2.3}
+\contentsline {paragraph}{\rmfamily }{4}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{5}{section*.14}
+\contentsline {paragraph}{\rmfamily }{4}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{5}{section*.15}
+\contentsline {section}{\numberline {2.3}\slshape Zabezpe\IeC {\v c}enie s\IeC {\'u}kromn\IeC {\'e}ho k\IeC {\v l}\IeC {\'u}\IeC {\v c}a }{5}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{5}{section*.16}
 \defcounter {refsection}{0}\relax 
@@ -42,47 +42,51 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{6}{section*.20}
 \defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{6}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{6}{section*.22}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}\slshape Remsig}{6}{section.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{7}{section*.21}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{7}{section*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{7}{section*.23}
 \defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{7}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{7}{section*.25}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}\bfseries Testy}{8}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{8}{section*.24}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{8}{section*.25}
-\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{8}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{8}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{8}{section*.28}
 \defcounter {refsection}{0}\relax 
 \select@language {russian}
 \defcounter {refsection}{0}\relax 
 \select@language {slovak}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{9}{section*.27}
+\contentsline {paragraph}{\rmfamily }{9}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}\slshape Tradi\IeC {\v c}n\IeC {\'e} testovanie alebo V\IeC {\'y}voj riaden\IeC {\'y}mi testami}{9}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{9}{section*.28}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{9}{section*.29}
-\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{9}{section*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{9}{section*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{9}{section*.32}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}\slshape Jednotkov\IeC {\'e} testy}{10}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}\slshape Integra\IeC {\v c}n\IeC {\'e} testy}{11}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{11}{section*.31}
+\contentsline {paragraph}{\rmfamily }{11}{section*.33}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}\slshape V\IeC {\'y}konnostn\IeC {\'e} testy}{11}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{11}{section*.32}
+\contentsline {paragraph}{\rmfamily }{11}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{11}{section*.33}
+\contentsline {paragraph}{\rmfamily }{11}{section*.35}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}\bfseries RemSig testy}{12}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -90,64 +94,74 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}\rmfamily Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{12}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{12}{section*.34}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{13}{section*.35}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{13}{section*.36}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}\rmfamily \IeC {\v S}trukt\IeC {\'u}ra testov}{13}{subsection.4.1.2}
+\contentsline {paragraph}{\rmfamily }{12}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{13}{section*.37}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{13}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{14}{section*.39}
+\contentsline {subsection}{\numberline {4.1.2}\rmfamily \IeC {\v S}trukt\IeC {\'u}ra testov}{13}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{14}{section*.40}
+\contentsline {paragraph}{\rmfamily }{13}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}\rmfamily V\IeC {\'y}sledky testov}{14}{subsection.4.1.3}
+\contentsline {paragraph}{\rmfamily }{13}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}\slshape Overenie funkcionality}{15}{section.4.2}
+\contentsline {paragraph}{\rmfamily }{14}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{14}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{14}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}\rmfamily V\IeC {\'y}sledky testov}{15}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}\slshape Overenie funkcionality}{16}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}\rmfamily Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{16}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}\rmfamily \IeC {\v S}trukt\IeC {\'u}ra testov}{16}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{16}{section*.41}
+\contentsline {paragraph}{\rmfamily }{17}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{16}{section*.42}
+\contentsline {paragraph}{\rmfamily }{17}{section*.45}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.3}\rmfamily V\IeC {\'y}sledky testov}{17}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}\slshape Integra\IeC {\v c}n\IeC {\'e} testy}{17}{section.4.3}
+\contentsline {section}{\numberline {4.3}\slshape Integra\IeC {\v c}n\IeC {\'e} testy}{18}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}\rmfamily \IeC {\v S}trukt\IeC {\'u}ra testov}{17}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}\rmfamily \IeC {\v S}trukt\IeC {\'u}ra testov}{18}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{18}{section*.43}
+\contentsline {paragraph}{\rmfamily }{18}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{19}{section*.44}
+\contentsline {paragraph}{\rmfamily }{19}{section*.47}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}\rmfamily V\IeC {\'y}sledky testov}{19}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}\slshape V\IeC {\'y}konnostn\IeC {\'e} testy}{19}{section.4.4}
+\contentsline {section}{\numberline {4.4}\slshape V\IeC {\'y}konnostn\IeC {\'e} testy}{20}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}\rmfamily Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{19}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}\rmfamily Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{20}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{20}{section*.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{20}{section*.49}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.2}\rmfamily \IeC {\v S}trukt\IeC {\'u}ra testov}{20}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{20}{section*.45}
+\contentsline {paragraph}{\rmfamily }{21}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}\rmfamily V\IeC {\'y}sledky testov}{20}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}\rmfamily V\IeC {\'y}sledky testov}{21}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries Z\IeC {\'a}ver}{22}{chapter.5}
+\contentsline {paragraph}{\rmfamily }{21}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{22}{section*.46}
+\contentsline {paragraph}{\rmfamily }{22}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{22}{section*.47}
+\contentsline {chapter}{\numberline {5}\bfseries Z\IeC {\'a}ver}{23}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{22}{section*.48}
+\contentsline {paragraph}{\rmfamily }{23}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{22}{section*.49}
+\contentsline {paragraph}{\rmfamily }{23}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{26}{appendix.A}
+\contentsline {paragraph}{\rmfamily }{23}{section*.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily }{23}{section*.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{27}{appendix.A}
