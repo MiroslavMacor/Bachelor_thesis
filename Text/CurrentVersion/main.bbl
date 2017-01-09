@@ -129,18 +129,13 @@
 
   \entry{crypt768}{misc}{}
     \name{author}{1}{}{%
-      {{hash=KeaT}{%
-         family={KLEINJING},
+      {{hash=K}{%
+         family={{KLEINJING, T., et al. (2010-02-18)}},
          familyi={K\bibinitperiod},
-         suffix={T.},
-         suffixi={T\bibinitperiod},
-         given={et\bibnamedelima al. (2010-02-18)},
-         giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod
-  \bibinitperiod-\bibinitperiod-\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KTea1}
-    \strng{fullhash}{KTea1}
+    \strng{namehash}{K1}
+    \strng{fullhash}{K1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{[PDF] International Association for Cryptologic Research.
@@ -214,7 +209,7 @@
 
   \entry{softwareTesting}{misc}{}
     \field{labeltitlesource}{title}
-    \field{note}{[online] Dostupné z:
+    \field{note}{[online] [cit. 15.~5. 2016]. Dostupné z:
   <\url{https://en.wikipedia.org/wiki/Software\_testing}>}
     \field{title}{Software testing}
   \endentry
@@ -335,23 +330,6 @@
     \field{title}{About}
   \endentry
 
-  \entry{gitHubAnalysis}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={{WEISS, Tall}},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{W2}
-    \strng{fullhash}{W2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{[online] Dostupné z:
-  <\url{http://blog.takipi.com/we-analyzed-30000-github-projects-here-are-the-top-100-libraries-in-java-js-and-ruby/}>}
-    \field{title}{We Analyzed 30,000 GitHub Projects – Here Are The Top 100
-  Libraries in Java, JS and Ruby}
-  \endentry
-
   \entry{mocking}{misc}{}
     \field{labeltitlesource}{title}
     \field{note}{[PDF] Dostupné z:
@@ -376,8 +354,8 @@
   \entry{systemNanotime}{misc}{}
     \field{labeltitlesource}{title}
     \field{note}{[online] Dostupné z:
-  <\url{http://www.tutorialspoint.com/java/lang/system\_nanotime.htm}>}
-    \field{title}{system\_nanotime}
+  <\url{https://docs.oracle.com/javase/7/docs/api/java/lang/System.html\#nanoTime()}>}
+    \field{title}{Class System}
   \endentry
 
   \entry{runtime}{misc}{}

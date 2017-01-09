@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[
-  digital, %% This option enables the default options for the
+  printed, %% This option enables the default options for the
            %% digital version of a~document. Replace with `printed`
            %% to enable the default options for the printed version
            %% of a~document.
@@ -102,12 +102,12 @@ Vo vývojovom procese sú kvalitne napísané testy takmer tak dôležité ako s
 Cieľom tejto bakalárskej práce je napísať testy pre aplikáciu RemSig \cite{remsigMuni}, ktorá má na starosť spravovanie súkromných kľúčov, podpisovanie dokumentov a~certifikátov, a~v~neposlednom rade skladovanie certifikátov pre potreby Masarykovej univerzity (MU). Aplikácia bola pre lepšiu škálovateľnosť a~údržbu prepísaná z~jazyku PHP do jazyku Java. Na aplikáciu RemSig  v~jazyku Java neprebehlo žiadne systematickejšie testovanie a~jediné testovanie a~overenie základnej funkcionality je testovanie samotného vývojára.\paragraph{}
 Práca je rozdelená do štyroch kapitol. Druhá kapitola podrobnejšie rozoberá dôležité aspekty a~princípy, na ktorých funguje RemSig. Vysvetľuje fungovanie a~využitie digitálneho podpisu a~taktiež obsahuje priblíženie bezpečnej SSL komunikácie s~obojstrannou autentizáciou. Podrobnejšie je rozobraná potreba utajiť súkromný kľúč, možné dôsledky straty kľúča a~spôsoby uschovávania súkromného kľúča na webovom serveri aby nedošlo k~jeho kompromitácii. V~závere kapitoly  je v~stručnosti rozobraná aplikácia RemSig, jej funkcie, zabezpečenie a~vlastnosti. \paragraph{}
 Tretia kapitola popisuje testy vo všeobecnosti. Vysvetľuje potrebu zvolenia správnych testov a~bližšie rozoberá jedno z~možných rozdelení testov podľa vstupných údajov. V~prvej podkapitole analyzuje dve protichodné taktiky pri tvorby testov. Nasleduje postupné rozoberanie troch typov testov: jednotkové, integračné a~výkonnostné. Pri každom z~testov je uvedená definícia konkrétneho typu a~ich bežné použitie v~praxi.\paragraph{}
-Štvrtá kapitola je sústredená na opis praktického prevedenie testov vytvorených pre RemSig. Pre každý typ testov je vytvorená podkapitola obsahujúca základný popis a~sekcie: štruktúra testov a~výsledky testov. V~sekcií štruktúra testov je opísané konkrétne prevedenie a~opis fungovania testov. Sekcia výsledky testov obsahuje výsledky testov z~testovacími dátami. Pokiaľ to je potrebné sú v~samostatnej sekcií definované použité technológie a~dôvod ich použitia. Záver kapitoly slúži na krátke zhrnutie testov.\paragraph{}
+Štvrtá kapitola je sústredená na opis praktického prevedenie testov vytvorených pre RemSig. Pre každý typ testov je vytvorená podkapitola obsahujúca základný popis a~sekcie: štruktúra testov a~výsledky testov. V~sekcií štruktúra testov je opísané konkrétne prevedenie a~opis fungovania testov. Sekcia výsledky testov obsahuje výsledky testov z~testovacími dátami. Pokiaľ to je potrebné sú v~samostatnej sekcií definované použité technológie a~dôvod ich použitia. \paragraph{}
 Testy vytvorené v~tejto bakalárskej práci tvoria základný testovací balík pre aplikáciu RemSig, ktorý výrazne uľahčí ďalší vývoj a~údržbu kódu. Všetky testy, vrátane podrobnej správy nájdených chýb a~vygenerovaných vstupných dát som odovzdal vývojovému tímu aplikácie RemSig.
-\chapter{Remsig aspekty}
-V tejto kapitole sú popísané najdôležitejšie časti aplikácie Remsig, ktoré majú dopad na vytváranie testov. Tieto časti Remsig buď potrebuje alebo využíva. Následne je opísaná potreba pre uchovávanie súkromných kľúčov na webovom úložišti a~v~závere kapitoly je v~stručnosti opísaná samotná aplikácia Remsig.
+\chapter{RemSig aspekty}
+V tejto kapitole sú popísané najdôležitejšie časti aplikácie RemSig, ktoré majú dopad na vytváranie testov. Tieto časti RemSig buď potrebuje alebo využíva. Následne je opísaná potreba pre uchovávanie súkromných kľúčov na webovom úložišti a~v~závere kapitoly je v~stručnosti opísaná samotná aplikácia RemSig.
 \section{Digitálne podpisy}
-Digitálne podpisovanie je jednou z~hlavných úloh aplikácie Remsig. Digitálny podpis~je matematická technika na overenie autenticity (pôvod dát), integrity (neporušenosť dát) a~nepopierateľnosť odoslania dát autorom \cite{digitalSignature}.  Digitálne podpisy fungujú na princípe asymetrickej kryptografie, na šifrovanie sú použité dva rozdielne kľúče, súkromný a~verejný.
+Digitálne podpisovanie je jednou z~hlavných úloh aplikácie RemSig. Digitálny podpis~je matematická technika na overenie autenticity (pôvod dát), integrity (neporušenosť dát) a~nepopierateľnosť odoslania dát autorom \cite{digitalSignature}.  Digitálne podpisy fungujú na princípe asymetrickej kryptografie, na šifrovanie sú použité dva rozdielne kľúče, súkromný a~verejný.
 Na vytvorenie digitálneho podpisu je vytvorený z~dát pomocou transformačnej funkcie  hash (skrátené jedinečné dáta pre vstup), ktorý je zakódovaný súkromným kľúčom. Zakódovaný hash spolu s~ďalšími informáciami ako je transformačná funkcia tvoria digitálny podpis. Príjemca na odšifrovanie správy použije verejný kľúč odosielateľa a~z~dát vytvorí vlastný hash, ktorý porovná s~hashom zo správy. Digitálny podpis~je špecifický a~jedinečný ku konkrétnym údajom a~konkrétnemu podpisovateľovi.
 
 \section{SSL/TLS zabezpečenie}
@@ -125,16 +125,16 @@ Handshake protokol je obzvlášť zraniteľný  útokom typu Man in the middle. 
 Najdôležitejšia úloha asymetrickej kryptografie, je správne zabezpečenie súkromného kľúča na strane servera a na strane klienta.
 Celá asymetrická kryptografia je postavená na predpoklade, že neexistuje spôsob zistenia súkromného kľúča nežiadúcou osobou \cite{ssl}. 
 Pri prezradení kľúča použitom na šifrovanie SSL komunikácie je zraniteľná konkrétna inštancia komunikácie a~to tiež len do jej uzavretia. Pri prezradení súkromného kľúča je kompromitovaná terajšia aj budúca komunikácia. Útočník, ktorému sa podarilo získať cudzí súkromný kľúč, je schopný čítať všetku komunikáciu medzi serverom a~klientom, akoby vôbec nebola šifrovaná. Tiež má možnosť vydávať sa za identitu od ktorej získal privátny kľúč.\paragraph{}
-Vzhľadom na momentálny problém s~prvočíselným rozkladom je takmer nemožné získať súkromný kľúč z~ľahšie dostupného verejného kľúča. Zatiaľ čo boli prípady získania súkromného 768-bit kľúča \cite{crypt768}, odhadovaný čas~ pri 1024-bit kľúči, by pri  použítí rovnakého algoritmu trval niekoľko tisíc rokov. Neznamená to absenciu rýchlejších a~efektívnejších algoritmov, ale oveľa častejší problém straty alebo odcudzenia súkromného kľúča nastáva na strane koncového užívateľa.\paragraph{}
+Vzhľadom na momentálny problém s~prvočíselným rozkladom je takmer nemožné získať súkromný kľúč z~ľahšie dostupného verejného kľúča. Zatiaľ čo boli prípady získania súkromného 768-bit kľúča \cite{crypt768}, odhadovaný čas~ pri 1024-bit kľúči, by pri  použítí rovnakého algoritmu trval niekoľko tisíc rokov. \paragraph{}
 Je očividné, že strata súkromného kľúča je závažný problém pre bezpečnú komunikáciu a~súkromný kľúč by mal byť chránený. Ochránenie súkromného kľúča ale nie je také triviálne ako by sa mohlo zdať. Súkromné kľúče je možné zabezpečiť pomocou hardvéru alebo softvéru. Oba spôsoby majú svoje výhody a~nevýhody, preto sa  v~bežnej praxi používa kompromis medzi hardvérovým a~softvérovým riešením.
-Hardvérové riešenie je považované za bezpečnejšie \cite{privateKeyStorage}. Kľúč je náchylný útoku iba počas prenosu alebo s~fyzickým prístupom ku zariadeniu na ktorom je kľúč uložený. Súkromný kľúč je možné uložiť na špecializovanom hardvéri ako je USB token alebo  čipová karta, plastová karta so zabudovaným čipom, etc. Výhodou týchto zariadení je, že aj pri odcudzení zariadenia nieje zaručená strata kľúča, ktorý je na ňom uložený. Toto je zaistené buď na hardvérovej úrovni alebo vymazaním kľúča pri zistenom pokuse o~neoprávnený prístup.\paragraph{}
+Hardvérové riešenie je považované za bezpečnejšie \cite{privateKeyStorage}. Kľúč je náchylný útoku iba počas prenosu alebo s~fyzickým prístupom ku zariadeniu na ktorom je kľúč uložený. Súkromný kľúč je možné uložiť na špecializovanom hardvéri ako je USB token alebo  čipová karta, plastová karta so zabudovaným čipom, etc. Výhodou týchto zariadení je, že aj pri odcudzení zariadenia nie je zaručená strata kľúča, ktorý je na ňom uložený. Toto je zaistené buď na hardvérovej úrovni alebo vymazaním kľúča pri zistenom pokuse o~neoprávnený prístup.\paragraph{}
 Uloženie kľúča na špeciálnom zariadení so sebou prináša hneď niekoľko nevýhod akou je škálovateľnosť, cenová nákladnosť a~v~neposlednom rade dostupnosť. Pri rozšírení systému o~ďalších užívateľov je potrebné nakúpiť nové zariadenia, taktiež pri strate alebo odcudzeniu zariadenia so súkromným kľúčom. Dostupnostné problémy vznikajú z~potreby užívateľa mať zariadenie vždy so sebou a~z~neschopnosti užívateľa sa autentizovať bez zariadenia. \paragraph{} 
 Softvérové riešenie adresuje hlavné nevýhody hardvérového riešenia. Kľúče sú uložené na serveri a~ľahko dostupné autentizovanému užívateľovi. Pri potrebe rozšíriť počet užívateľov sa jednoducho vygenerujú nové kľúče, ktoré sa následne distribujú užívateľom.  \paragraph{}
 Úspech softvérového riešenia záleží na zabezpečení servera, na ktorom sú kľúče uložené. Server môže obsahovať od niekoľko desiatok až po niekoľko tisícov kľúčov, čím je výrazne viac atraktívny pre útočníkov ako zariadenie užívateľa, na ktorom môže byť jeden alebo dva kľúče. Na server je možné útočiť bez fyzického prístupu, čím je výrazne viac zraniteľný ako hardvérové riešenie. \paragraph{}
 
 Nech je zvolená ktorákoľvek možnosť, neodporúča sa  uchovávať kľúče v~ich prirodzenej, nezašifrovanej forme. Namiesto toho je bežnou praxou šifrovať súkromné kľúče pomocou užívateľom zvoleného hesla. Okrem pridanej bezpečnosti, šifrovanie heslom tiež zaisťuje aby ani samotný úschovný systém nebol schopný čítať súkromné kľúče. Heslá sú stále náchylnejšie útokom typu brute-force (skúšanie každej kombinácie) a~útokom, ktoré hádajú heslo, ale je to rozumná stredná cesta medzi nešifrovaním súkromných kľúčov a~šifrovaním ich do takej miery kde by obmedzovali užívateľskú dostupnosť. \paragraph{}   
  
-\section{Remsig}
+\section{RemSig}
 Aplikácia RemSig \cite{remsigMuni} vznikla na Ústave výpočtovej techniky Masarykovej univerzity, ako riešenie podpisovania dokumentov (okrem iného aj pre štátnu správu) a ukladania súkromných kľúčov. Zároveň bolo potrebné zmeniť pôvodné riešenia spravovania osobných digitálnych certifikátov na počítači, alebo hardvérových zariadeniach a~umožniť vytváranie digitálnych podpisov na diaľku. RemSig umožňuje podpisovanie priamo z~webového rozhrania systémom INET (Ekonomicko-správní informačný systém Masarykovej univerzity) a~IS~MU (Informačný systém Masarykovej univerzity). Z~INETu je možné certifikáty aj importovať.\paragraph{}
 RemSig poskytuje:
 \begin{itemize}
@@ -153,7 +153,7 @@ Aplikácia RemSig bola pôvodne napísaná v~jazyku PHP, ale kvôli väčšej mo
 
 
 \chapter{Testy}
-Testy v~informatike sú programy alebo časti programov navrhnuté na overenie funkcionality testovaného produktu. Toto je primárna úloha testov ale testy slúžia, okrem iného, aj na poskytnutie dokumentácie pre potreby programátora, overenie nezmenenej funkcionality pri refaktorácii \ref{refact}(zmena štruktúry kódu pre orientáciu), uľahčenie hľadania bugov (časti kódu kde sa aplikácia správa inak ako sa má), tým pádom skrátenie času potrebného na debugovanie, atď.
+Testy v~informatike sú programy alebo časti programov navrhnuté na overenie funkcionality testovaného produktu. Toto je primárna úloha testov ale testy slúžia, okrem iného, aj na poskytnutie dokumentácie pre potreby programátora, overenie nezmenenej funkcionality pri refaktorovaní \cite{refact}, uľahčenie hľadania bugov (časti kódu kde sa aplikácia správa inak ako sa má), tým pádom skrátenie času potrebného na debugovanie, atď. Refaktorovanie je proces~úprav a~zmeny kódu za účelom zlepšenia priehľadnosti a~udržovateľnosti kódu, pričom sa ale nemení funkcionalita kódu.
 %\textlabel{Refactorizacia}{sth:refact}
  \paragraph{}
 Typy testov sa enormne líšia v~závislosti od veľkosti testovaného kódu, spôsobu testovania a~očakávaných výsledkov. Pri obrovskom množstve typov testov a~spôsoboch testovania je úlohou vývojového tímu zvoliť správnu cestu pre maximálne ošetrenie aplikácie, a~zároveň šetrenia tímových prostriedkov ako je napríklad čas \cite{ssl}. V~tejto kapitole sú rozobrané len niektoré testovacie procesy a~typy testov, ktoré prevažne súvisia s~praktickou časťou.\paragraph{}
@@ -167,7 +167,7 @@ V tradičnom testovaní sú všetky testy písané až po dokončení kódu. Ten
 Samotné testy ale potencionálne strácajú na kvalite, z~nevyhnutnej  potreby špecializácie testov na konkrétny kód. Ako je aj závislosť na skutočných dátach, čo navádza k~neodhaleným problémom a~neskorším odchýlkam v~nasledujúcich implementáciách. Pokrytie aplikácie testami je ďalšia nevýhoda tradičného testovania.  \paragraph{}
 Ako odpoveď na tieto problémy vzniklo čiastočne z~extrémneho programovania TDD. Extrémne programovanie je špecifické neustálou adaptáciou na meniace sa  požiadavky zákazníka. Medzi identifikujúce znaky extrémneho programovania patrí neustále testovanie, programovanie v~pároch (dvaja programátori za jedným počítačom), alebo implementovanie  iba tých nevyhnutných funkcií pre realizovanie kódu. \paragraph{}
 TDD sa zakladá na malých, stále sa opakujúcich krokoch alebo fázach vývoju. Fáza písaniu testov, fáza písania kódu a~fáza refaktorovania.
-V~prvom kroku (prvej fáze) sa napíše test na zatiaľ neexistujúci kód a~overí sa, či test zlyhá. Nasleduje vytvorenie kódu a~spustenie testov. Posledný krok je refaktorovanie. Refaktorovanie je proces~úprav a~zmeny kódu za účelom zlepšenia priehľadnosti a~udržovateľnosti kódu, pričom sa ale nemení funkcionalita kódu. V~tomto kroku sa venuje efektivite, čitateľnosti a~udržovateľnosti kódu. Kód je presunutý na miesto, kde v~projekte logicky patrí a~sú odstránené duplicity kódu. Pri refaktorovaní, testy slúžia na overenie nezmenenej funkcionality. Celý proces~sa opakuje napísaním testov pre ďalšiu časť požadovanej aplikácie.
+V~prvom kroku (prvej fáze) sa napíše test na zatiaľ neexistujúci kód a~overí sa, či test zlyhá. Nasleduje vytvorenie kódu a~spustenie testov. Posledný krok je refaktorovanie. V~tomto kroku sa venuje efektivite, čitateľnosti a~udržovateľnosti kódu. Kód je presunutý na miesto, kde v~projekte logicky patrí a~sú odstránené duplicity kódu. Pri refaktorovaní, testy slúžia na overenie nezmenenej funkcionality. Celý proces~sa opakuje napísaním testov pre ďalšiu časť požadovanej aplikácie.
 Tento proces sa riadi tromi zákonmi alebo pravidlami TDD \cite{cleanCode}.
 \begin{itemize}
 	\item Prvý zákon: Nesmieš napísať produkčný kód, kým nie je napísaný zlyhávajúci test.
@@ -196,7 +196,7 @@ Na spravovanie často využívaných metód je vytvorená trieda TestManager. Te
 Testy sú zamerané na kontrolovanie troch hlavných prípadov. Očakávané správanie aplikácie so správnymi parametrami, s~nesprávnymi parametrami a~s~null (prázdnymi, nenaplnenými) parametrami.
 \subsection{Použité technológie}
 RemSig jednotkové testy sú praktizované technológiou  JUnit \cite{junit}. Na využívanie a~spravovanie databázy je použitý systém MySQL \cite{mySqlBible} v~spolupráci s~DbUnit \cite{dbunit}\paragraph{}
-JUnit – je jednoduché open source rozhranie slúžiace na písanie a~spúšťanie opakovateľných testov. JUnit porovnáva návratové hodnoty metód s~preddefinovanými hodnotami. Podľa prieskumu v~roku 2013 z~10 000 projektov na serveri github, ktorý slúži na zdieľanie zdrojových kódov, je JUnit, spolu s~knižnicou slf4j-api, najpoužívanejšou knižnicou obsiahnutom v~30.7\% projektov \cite{gitHubAnalysis}. \paragraph{}
+JUnit – je jednoduché open source rozhranie slúžiace na písanie a~spúšťanie opakovateľných testov. JUnit porovnáva návratové hodnoty metód s~preddefinovanými hodnotami.  \paragraph{}
 MySQL – je open source databázový systém. Je kompatibilný so všetkými často používanými jazykmi a~podporovaný najčastejšie používanými operačnými systémami.
 \paragraph{}
 DbUnit -  je nadstavba JUnitu zameraná prevažne na nastavenie databázy do predom známeho stavu. Toto je obzvlášť užitočné pri jednotkových testoch, kde jeden test môže pozmeniť údaje v~databáze a~viesť k~nepresnému výsledku ostatných testov. DbUnit inicializuje databázu pomocou  dátovej sady uloženej v XML formáte a~pri inicializácii overuje typovú správnosť vložených údajov. 
@@ -217,7 +217,7 @@ Testované sú všetky verejné metódy tried, s výnimkou vyššie zmienených 
 
 Testy vo veľkej miere využívajú databázu a~nepoužívajú mockovanie databázy \cite{mocking}. Mockovanie je spôsob simulovania zdrojov a~objektov, aby imitovali správanie skutočných zdrojov. Mockovanie databázy prináša výhody v~zvýšení rýchlosti testov a~nezávislosť od konkrétnej inštancie databázy. \paragraph{}
 
-Mockovanie databázy v jednotkových testoch nieje praktizované z~nasledujúcich dôvodov. Volania databázy sú realizované aplikáciou RemSig priamo v~kóde pomocou SQL príkazov, čo vytvára nemožnosť vytvorenie abstrakcie nezávislej databázy bez refaktorovania pôvodných metód. Tu sa stráca jedna z~hlavných výhod mockovania, abstrakcia zdrojov.
+Mockovanie databázy v jednotkových testoch nie je praktizované z~nasledujúcich dôvodov. Volania databázy sú realizované aplikáciou RemSig priamo v~kóde pomocou SQL príkazov, čo vytvára nemožnosť vytvorenie abstrakcie nezávislej databázy bez refaktorovania pôvodných metód. Tu sa stráca jedna z~hlavných výhod mockovania, abstrakcia zdrojov.
 
 Zatiaľ čo je možné vytvoriť mockovanie na konkrétnu inštanciu príkazov, prevedenie je značne komplikovanejšie a~vytvorené testy strácajú na integrite. Ďalšou výhodou je zrýchlenie testov, ale zrýchlenie sa nepovažovalo za dostatočné, aby odôvodnilo čas testera potrebný na prevedenie mocku databázy. \paragraph{}
 Databáza v~dopredu známom stave patrí tiež medzi výhody mockovania. RemSig jednotkové testy ako náhradu  používajú DbUnit. TestManager obsahuje metódu na   prevedenie údajov z~databázy do XML, vďaka čomu môžu testovacie údaje byť udržiavané takmer automaticky. DbUnit maže údaje po každom prevedenom teste, a~preto sa výrazne odporúča používať na testovanie inú inštanciu databázy ako produkčnú. \paragraph{}
@@ -227,7 +227,6 @@ Každý test sa skladá s~nasledujúcich častí. V~úvode si test inicializuje 
 Test následne overí správanie metódy so všetkými kombináciami prázdnych a~nulových hodnôt. Pri testovaní zachytáva nullPointerException a~v~prípade nezachytenia programom test zlyhá.
 
 V~ďalšej časti test overí správanie metódy pri nesprávnych vstupných parametroch.
-
  Pri autentizácií sa jedná napr. o~nesprávnu kombináciu prihlasovacieho mena a~hesla alebo nesprávnu kombináciu hesla a~názvu certifikátu. Pri týchto testoch sa kontroluje aj databáza či nebola pozmenená nesprávnymi dátami.
  
 V~poslednom kroku sa kontroluje správanie aplikácie s~korektnými dátami. Návratové hodnoty sa porovnávajú s~predom definovanými hodnotami.
@@ -253,7 +252,7 @@ Nasledujúce metódy nekontrolovali nulové výnimky:
  \end{itemize}
 
 
-Medzi vážnejšie nedostatky patrili: metóda UploadPrivatekey() zlyhávala v~jednej kombinácii parametrov v~ktorej mala fungovať a~nebola schopná zmeniť kľúč na nové dáta. Tiež obsahovala syntatickú chybu v SQL príkaze. Pri metóde resetPassword() bolo staré heslo stále funkčné. Metóda signPkcs7 nerozoznávala voľbu algoritmu „SHA-1“ a~zlyhávala z~dôvodu bielych znakov (medzery a~nové riadky) v~konfiguračnom súbore profiles.xml. 
+Medzi vážnejšie nedostatky patrili: metóda UploadPrivatekey() zlyhávala v~jednej kombinácii parametrov v~ktorej mala fungovať a~nebola schopná zmeniť kľúč na nové dáta. Tiež obsahovala syntatickú chybu v SQL príkaze. Pri metóde resetPassword() bolo staré heslo stále funkčné. Metóda signPkcs7() nerozoznávala voľbu algoritmu „SHA-1“ a~zlyhávala z~dôvodu bielych znakov (medzery a~nové riadky) v~konfiguračnom súbore profiles.xml. 
 
 
 
@@ -280,7 +279,7 @@ Integračné testy  overujú funkčnosť RemSig metód cez aktívny server. Rovn
 Pri integračnom testovaní sa  vytvorili štyri podpriečinky  v~testovacom priečinku pomenované null, incorrect (nesprávne), correct (správne), correctSequence (správne v~poradí) a~piaty priečinok s~názvom output na uchovávanie logu z~testov. V~každom zo štyroch priečinkov sú uložené korešpondujúce testovacie dáta uložené v~XML formáte. Test prebieha nasledovne: 
 \begin{enumerate}
 	\item Postupne sú načítané všetky súbory z~priečinkov null, incorrect a~correct a~všetky súbory v~ich podpriečinkoch (zložka correctSequence je podpriečinok priečinku correct). Rozdielne priečinky nie sú nevyhnutné pre správne fungovanie testu ale dopĺňajú jeho funkcionalitu. 
-	\item V~každom súbore sa vyhľadá konkrétny názov metódy Remsig. Test očakáva súbory v~XML formáte s~názvom metódy v~súbore.
+	\item V~každom súbore sa vyhľadá konkrétny názov metódy RemSig. Test očakáva súbory v~XML formáte s~názvom metódy v~súbore.
 	\begin{itemize}
 		\item Pokiaľ sa názov metódy v~súbore nenájde, prejde sa na ďalší súbor.
 		\item Ak sa metóda nájde postupuje sa krokom 3.
@@ -299,7 +298,7 @@ Testy odhalili niektoré chýbajúce chybové hlášky, v~dvoch prípadoch serve
 Toto vytvorilo potrebu skontrolovať pôvodné testy a~bližšie analyzovať vzniknutú chybu. Ukázalo sa, že toto bolo spôsobené nesprávnym zachytávaním výnimiek na strane servera.
 Pri volaní metód signPdf a~exportPkcs12 s~neexistujúcou kombináciou užívateľského a~certifikačného ID, server nevracal žiadnu odpoveď. Metóda exportPkcs12 čiastočne obchádzala zabezpečenie heslom. Pri nesprávnom hesle k~pkcs12 metóda exportovala pkcs12. Toto sa ale nedialo pokiaľ heslo užívateľa nebolo správne.
 \section{Výkonnostné testy}
-Výkonnostné testy sú zamerané na rýchlosť spracovania požiadaviek serverom a na využitie procesoru a pamäte počas zátaže.
+Výkonnostné testy sú zamerané na rýchlosť spracovania požiadaviek serverom a na využitie procesoru a operačnej pamäte počas zátaže.
 Pred každým meraním bolo spustených niekoľko stoviek post požiadavok s~rovnakými dátami ako boli následne testované. Táto predpríprava prostredia je dôležitá kvôli Java prekladači, ktorý zrýchľuje často sa opakujúci kód, čo by mohlo viesť k~nepresným výsledkom. Následné merania boli  testované pri sto a~následne tisíc opakovaní.
 \subsection{Použité technológie}
 Pre minimalizovanie nepresností spôsobených vnútorným procesom Java prekladača a~vnútornými procesov operačného systému je na meranie časových rozdielov medzi začatím prvej požiadavky a~skončením poslednej požiadavky použitá funkcia Javy nanotime \cite{systemNanotime}. Metóda nanotime je špecializovaná na stopovanie určitého časového úseku a~nie je možné jej použitie na žiadnu inú časovú referenciu. Návratová hodnota je počet nano sekúnd od fixného ľubovoľného času (môže byť aj v~budúcnosti).
@@ -313,11 +312,11 @@ Výkonnostný test je, podobne ako integračný test, navrhnutý ako samostatne 
 Výkonnostné testy sú schopné testovať časovú odozvu a výkon pre vybraný počet iterácii na jednej metóde, ale tiež na sekvencii daných metód. Meranie prebieha spoločnou metódou runTest(), do ktorej je možné vložiť ako parametere konkrétnu metódu a~dáta alebo list zoradených dát a~metód. Pri výbere počtu iterácií je možné zvoliť cyklus~prevedenia opakovania a~to buď for alebo while.
 V~kóde je  volanie nanotime funkcie vložené tesne pred prvým a~tesne za posledným volaním meranej metódy. Metódy na meranie procesoru a pamäte sú vložené pred a za metódou runTest(). Výsledné hodnoty sú vypísané užívateľovi a uložené do súboru. 
 \subsection{Výsledky testov}
-Namerané hodnoty z~testovania sú pre prehľadnosť uložené v~tabuľke. Tabuľka obsahuje sto a~tisíc meraní pri meraní na lokálnom serveri. Metódy testované osobitne s~nezmenenými vstupnými parametrami sú reprezentované v~tabuľke menom volanej metódy. U~niektorých metód je potrebné vytvoriť sekvenciu rôznych dát aby sa mohlo predísť skresleniu výsledkov a~zachovať tabuľku v~konzistentnom stave. \paragraph{}
+Namerané hodnoty z~testovania sú pre prehľadnosť uložené v~tabuľkách. Prvá tabuľka obsahuje sto a~druhá tisíc opakovaní pri meraní na lokálnom serveri. Metódy testované osobitne s~nezmenenými vstupnými parametrami sú reprezentované v~tabuľkách menom volanej metódy. U~niektorých metód je potrebné vytvoriť sekvenciu rôznych dát aby sa mohlo predísť skresleniu výsledkov a~zachovať tabuľky v~konzistentnom stave.
 Tieto metódy reprezentuje názov „sekvencia“ a~očíslovanie 1 až 3. Sekvencie s~popisom zmien údajov  a~po užitých metód sú nasledovné.
 Sekvencia 1 – ImportPKCS12, vstupné údaje sa líšia v~ID, očíslované od jedna po tisíc. \newline
 Sekvencia 2 – changePassword(), dva rozdielne vstupné parametre, prvý parameter zmení heslo  a~druhý parameter vráti heslo na pôvodné.\newline
-Sekvencia 3 – changeStatus(), dva rozdielne vstupné parametre, prvý zmení status~a druhý ho mení na pôvodný status. \newline
+Sekvencia 3 – changeStatus(), dva rozdielne vstupné parametre, prvý zmení status~a druhý ho mení na pôvodný status. 
 Pri sekvenciách, kde sú použité viaceré metódy je počet iterácii adekvátne upravený pre zachovanie nemennosti tabuľky. 
 \begin{table}[htbp]
 	\begin{center}\scalebox{1}{%\tabcolsep=0.11cm
@@ -372,13 +371,13 @@ Pri sekvenciách, kde sú použité viaceré metódy je počet iterácii adekvá
 \end{table}
 
 \paragraph{}
-Z tabuľky je vidieť, že väčšina metód spotrebúva približne rovnaký pomer zdrojov až na metódu GenerateRequest().  GenerateReques() je výrazne pomalšia ako ostatné metódy, pretože výpočet prvotnej požiadavky na certifikát je náročná jednovláknová operácia. Aj keď celkový výkon operačného systému sa pohybuje okolo 30\% vlákno, ktoré výpočet vykonávalo pracovalo na 100\% 
+Z tabuliek je vidieť, že väčšina metód spotrebúva približne rovnaký pomer zdrojov až na metódu GenerateRequest().  GenerateReques() je výrazne pomalšia ako ostatné metódy, pretože výpočet prvotnej požiadavky na certifikát je náročná jednovláknová operácia. Aj keď celkový výkon operačného systému sa pohybuje okolo 30\% vlákno, ktoré výpočet vykonávalo pracovalo na 100\% 
 \chapter{Záver}
 Cieľom bakalárskej práce bolo vytvoriť jednotkové, integračné a~výkonnostné testy pre aplikáciu RemSig, ktorá bola implementovaná v~jazyku Java. Pri testovaní boli postupne odhalené problémy rôznej závažnosti, ktoré boli posunuté vývojovému tímu. \paragraph{}
-Pri vývoji som odhalil niekoľko nefunkčne implementovaných metód a~nezachytených výnimiek. Pri nefunkčných metódach som testy napísal podobne ako pri funkčných metódach, kde bol formát očakávaného výsledku vyčítaný zo zdrojového kódu aplikácie. Na správu obecných alebo často používaných metód bola vytvorená trieda TestManager. Túto triedu každý test do istej miery využíva. \paragraph{}
-Jednotkové testy pokrývajú všetky významné metódy. Nie sú pokryté metódy typu jednoduché nastavenie privátnej premennej. Integračné testy testujú volania metód priamo na serveri. Oproti jednotkovým testom, ktoré testujú výhradne metódy bez zasadenia do širších technológii akou jej server. Výkonnostné testy merajú rýchlosť spracovania požiadaviek serverom.\paragraph{}
-Všetky požadované testy zo zadania boli napísané a~pripravené na nasadenie. Navyše bol napísaný aj Serverový fork na minimalizovanie problémov s~nasadením, ktorý s~určitým časom sledovania odpovedí starého aj nového servera vie s~celkom veľkou pravdepodobnosťou odporučiť novú implementáciu k~ostrému prevozu. Všetky testy sú  implementované aby s~minimálnym úsilím mohli byť upravené na budúce meniace sa požiadavky, pričom ale nestrácali nič na svojej relativite.\paragraph{}
-Cieľ bakalárskej práce bol splnený. Vytvorené testy odhalili, že testovaná aplikácia RemSig zatiaľ nie je pripravená do ostrého nasadenia. Pred nasadením je potrebné odstrániť všetky nájdené chyby a~nedostatky. Vytvorený testovací balík uľahčí lokalizovanie momentálnych aj prípadných budúcich chýb a~pridá k~stabilite aplikácie Remsig.
+Pri vývoji som odhalil niekoľko nefunkčne implementovaných metód a~nezachytených výnimiek. Pri nefunkčných metódach som testy napísal podobne ako pri funkčných metódach, kde bol formát očakávaného výsledku vyčítaný zo zdrojového kódu aplikácie. Na správu obecných alebo často používaných metód bola vytvorená trieda TestManager. Túto triedu každý test do istej miery využíva. \paragraph{} 
+Jednotkové testy pokrývajú všetky významné metódy. Nie sú pokryté iba triviálne metódy e.g. jednoduché nastavenie privátnej premennej. Integračné testy testujú volania metód priamo na serveri. Oproti jednotkovým testom, ktoré testujú výhradne metódy bez zasadenia do širších technológii akou jej server. Výkonnostné testy merajú rýchlosť spracovania požiadaviek serverom a zaťaženie procesoru a operačnej pamäte aplikáciou RemSig.\paragraph{}
+Všetky požadované testy zo zadania boli napísané a~pripravené na nasadenie. Navyše bol napísaný aj Serverový fork na minimalizovanie problémov s~nasadením, ktorý s~určitým časom sledovania odpovedí starého aj nového servera vie s~celkom veľkou pravdepodobnosťou určiť či je nová implementácia vhodná k~ostrému prevozu. Všetky testy sú  implementované aby s~minimálnym úsilím mohli byť upravené na budúce meniace sa požiadavky, pričom ale nestrácali nič na svojej relativite.\paragraph{}
+Cieľ bakalárskej práce bol splnený. Vytvorené testy odhalili, že testovaná aplikácia RemSig zatiaľ nie je pripravená do ostrého nasadenia. Pred nasadením je potrebné odstrániť všetky nájdené chyby a~nedostatky. Vytvorený testovací balík uľahčí lokalizovanie momentálnych aj prípadných budúcich chýb a~pridá k~stabilite aplikácie RemSig.
 
 
 

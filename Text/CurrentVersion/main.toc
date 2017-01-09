@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{2}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}\bfseries Remsig aspekty}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}\bfseries RemSig aspekty}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}\slshape Digit\IeC {\'a}lne podpisy}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
@@ -36,7 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{5}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{6}{section*.18}
+\contentsline {paragraph}{\rmfamily }{5}{section*.18}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{6}{section*.19}
 \defcounter {refsection}{0}\relax 
@@ -46,7 +46,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{6}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}\slshape Remsig}{6}{section.2.4}
+\contentsline {section}{\numberline {2.4}\slshape RemSig}{6}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{7}{section*.23}
 \defcounter {refsection}{0}\relax 
@@ -150,18 +150,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.3}\rmfamily V\IeC {\'y}sledky testov}{21}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{21}{section*.51}
+\contentsline {paragraph}{\rmfamily }{23}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{22}{section*.52}
+\contentsline {chapter}{\numberline {5}\bfseries Z\IeC {\'a}ver}{24}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries Z\IeC {\'a}ver}{23}{chapter.5}
+\contentsline {paragraph}{\rmfamily }{24}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{23}{section*.53}
+\contentsline {paragraph}{\rmfamily }{24}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{23}{section*.54}
+\contentsline {paragraph}{\rmfamily }{24}{section*.54}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\rmfamily }{24}{section*.55}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily }{24}{section*.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}\bfseries Pr\IeC {\'\i }lohy}{28}{appendix.A}
